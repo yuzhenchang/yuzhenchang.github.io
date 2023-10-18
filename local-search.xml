@@ -4,13 +4,38 @@
   
   
   <entry>
+    <title>Java基础知识总结</title>
+    <link href="/2023/10/18/java-basic-stage-01/"/>
+    <url>/2023/10/18/java-basic-stage-01/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>花花的世界</title>
     <link href="/2023/10/18/ios-interview-01/"/>
     <url>/2023/10/18/ios-interview-01/</url>
     
-    <content type="html"><![CDATA[<div class="code-wrapper"><pre><code class="hljs lisp">NSLog(@<span class="hljs-string">&quot;哈哈哈哈&quot;</span>)<span class="hljs-comment">;</span></code></pre></div>]]></content>
+    <content type="html"><![CDATA[]]></content>
     
     
+    
+    <tags>
+      
+      <tag>iOS</tag>
+      
+    </tags>
     
   </entry>
   
