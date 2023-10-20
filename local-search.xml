@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>CSS属性特征和CSS的盒子模型</title>
+    <link href="/2023/10/20/html-css-05/"/>
+    <url>/2023/10/20/html-css-05/</url>
+    
+    <content type="html"><![CDATA[<h2 id="一-伪元素"><a href="#一-伪元素" class="headerlink" title="一. 伪元素"></a>一. 伪元素</h2><p><img src="/2023/10/20/html-css-05/Snip20231020_9.png"></p><h3 id="1-1-first-line-first-letter-了解"><a href="#1-1-first-line-first-letter-了解" class="headerlink" title="1.1. first-line&#x2F;first-letter(了解)"></a>1.1. first-line&#x2F;first-letter(了解)</h3><h3 id="1-2-before-after"><a href="#1-2-before-after" class="headerlink" title="1.2. before&#x2F;after"></a>1.2. before&#x2F;after</h3><ul><li>插入内容</li><li>插入图片</li><li>方格<ul><li>content不能省略</li><li>width&#x2F;height</li><li>dib</li></ul></li></ul><h2 id="二-继承-层叠-元素类型"><a href="#二-继承-层叠-元素类型" class="headerlink" title="二. 继承-层叠-元素类型"></a>二. 继承-层叠-元素类型</h2><h3 id="2-1-CSS属性继承"><a href="#2-1-CSS属性继承" class="headerlink" title="2.1. CSS属性继承"></a>2.1. CSS属性继承</h3><ul><li>继承: 如果我们给某一个元素设置了某个CSS属性, 而该属性具有继承性, 那么该元素的所有子元素会默认继承该属性.</li><li>有哪些继承属性? 不需要记<ul><li>一般和文本&#x2F;字体相关的很多属性都具备继承;</li><li>xmind</li><li>多查文档</li></ul></li></ul><h3 id="2-2-CSS属性层叠"><a href="#2-2-CSS属性层叠" class="headerlink" title="2.2. CSS属性层叠"></a>2.2. CSS属性层叠</h3><ul><li>一个CSS属性可以多次设置:<ul><li>判断一: 权重, 优先级;</li><li>判断二: 先后顺序;</li></ul></li><li>常见的选择器:<ul><li>!important -&gt; 10000</li><li>内联 -&gt; 1000</li><li>id -&gt; 100</li><li>类&#x2F;伪类&#x2F;属性 -&gt; 10</li><li>元素 -&gt; 1</li><li>统配 -&gt; 0</li></ul></li></ul><h3 id="2-3-元素的类型"><a href="#2-3-元素的类型" class="headerlink" title="2.3. 元素的类型"></a>2.3. 元素的类型</h3><ul><li>div -&gt; 块级元素</li><li>span -&gt; 行内级</li><li>有本质的区别 -&gt; display: block</li><li>span -&gt; 块级</li><li>div -&gt; 行内级<br>display:</li><li>block<ul><li>独占一行(父元素)</li><li>可以设置宽度和高度</li><li>默认高度是内容的高度</li></ul></li><li>inline-block<ul><li>和其他行内级元素在同一行显示</li><li>可以设置宽度和高度</li><li>默认宽高由内容决定</li></ul></li><li>inline<ul><li>和其他行内级元素在同一行显示</li><li>不能设置宽度和高度</li><li>宽高由内容决定</li></ul></li></ul><h3 id="2-4-元素的隐藏方法"><a href="#2-4-元素的隐藏方法" class="headerlink" title="2.4. 元素的隐藏方法"></a>2.4. 元素的隐藏方法</h3><ul><li>display: none</li><li>visibility: hidden</li><li>rgba -&gt; alpha</li><li>opacity -&gt; 设置透明度<ul><li>所有的子元素都会跟着一起设置</li></ul></li></ul><h3 id="2-5-overflow"><a href="#2-5-overflow" class="headerlink" title="2.5. overflow"></a>2.5. overflow</h3><ul><li>visible</li><li>hidden</li><li>scroll</li><li>auto</li></ul><h3 id="2-6-HTML嵌套的规范"><a href="#2-6-HTML嵌套的规范" class="headerlink" title="2.6. HTML嵌套的规范"></a>2.6. HTML嵌套的规范</h3><ul><li>块级&#x2F;行内块级可以嵌套其他元素</li><li>p元素不能嵌套div元素</li><li>行内级元素不能嵌套块级元素</li></ul><h2 id="三-盒子模型"><a href="#三-盒子模型" class="headerlink" title="三. 盒子模型"></a>三. 盒子模型</h2><h3 id="3-1-认识盒子模型"><a href="#3-1-认识盒子模型" class="headerlink" title="3.1. 认识盒子模型"></a>3.1. 认识盒子模型</h3><ul><li>照片墙</li><li>HTML元素都是盒子</li><li>盒子模型组成属性:<ul><li>content</li><li>padding</li><li>border</li><li>margin</li></ul></li></ul><h3 id="3-2-content"><a href="#3-2-content" class="headerlink" title="3.2. content"></a>3.2. content</h3><ul><li>width&#x2F;height</li><li>width: auto</li><li>min-width&#x2F;max-width</li></ul><h3 id="3-3-padding"><a href="#3-3-padding" class="headerlink" title="3.3. padding"></a>3.3. padding</h3><p>内边距:</p><ul><li>四个方法</li><li>padding<ul><li>4&#x2F;3&#x2F;2&#x2F;1</li></ul></li></ul><h3 id="3-4-border"><a href="#3-4-border" class="headerlink" title="3.4. border"></a>3.4. border</h3><p>边框</p><ul><li>width</li><li>style</li><li>color<div class="code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-tag">div</span> &#123;  <span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid red;&#125;</code></pre></div></li></ul><h3 id="3-5-border-radius"><a href="#3-5-border-radius" class="headerlink" title="3.5. border-radius"></a>3.5. border-radius</h3><p>圆角:</p><ul><li>具体的值, 比如6px</li><li>百分比 -&gt; border box(了解)<ul><li>50%</li></ul></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>HTML</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>HTML_CSS_04</title>
     <link href="/2023/10/20/html-css-04/"/>
     <url>/2023/10/20/html-css-04/</url>
