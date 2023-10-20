@@ -4,17 +4,17 @@
   
   
   <entry>
-    <title>HTML_CSS_01</title>
-    <link href="/2023/10/18/html-css-01/"/>
-    <url>/2023/10/18/html-css-01/</url>
+    <title>Java基础知识总结</title>
+    <link href="/2023/10/18/java-basic-stage-01/"/>
+    <url>/2023/10/18/java-basic-stage-01/</url>
     
-    <content type="html"><![CDATA[<h2 id="一-邂逅前端开发"><a href="#一-邂逅前端开发" class="headerlink" title="一. 邂逅前端开发"></a>一. 邂逅前端开发</h2><p><img src="/./img/Snip20231020_1.png"></p><h3 id="1-1-软件开发、软件开发体系"><a href="#1-1-软件开发、软件开发体系" class="headerlink" title="1.1. 软件开发、软件开发体系"></a>1.1. 软件开发、软件开发体系</h3><h3 id="1-2-完善的应用程序包括哪些？"><a href="#1-2-完善的应用程序包括哪些？" class="headerlink" title="1.2. 完善的应用程序包括哪些？"></a>1.2. 完善的应用程序包括哪些？</h3><ul><li>服务器开发</li><li>iOS开发、Android开发</li><li>Web开发</li><li>桌面开发（window mac os）</li></ul><h3 id="1-3-前端开发的内容"><a href="#1-3-前端开发的内容" class="headerlink" title="1.3. 前端开发的内容"></a>1.3. 前端开发的内容</h3><ul><li>前端开发的任务；<ul><li>web开发、小程序开发</li><li>移动端、桌面端（electron、vscode）、服务器开发（Node）</li></ul></li><li>前端开发的路线</li></ul><h3 id="1-4-学习方法和学习建议"><a href="#1-4-学习方法和学习建议" class="headerlink" title="1.4. 学习方法和学习建议"></a>1.4. 学习方法和学习建议</h3><ul><li>学习任何新的东西的，最好了解它的历史、局限性、本质；</li><li>知识进行分类：<ul><li>常用的知识：必须非常熟练；</li><li>不常用的知识：知道有他，知道在哪里查；</li></ul></li></ul><h2 id="二-邂逅Web开发"><a href="#二-邂逅Web开发" class="headerlink" title="二. 邂逅Web开发"></a>二. 邂逅Web开发</h2><h3 id="2-1-电脑配置、推荐软件"><a href="#2-1-电脑配置、推荐软件" class="headerlink" title="2.1. 电脑配置、推荐软件"></a>2.1. 电脑配置、推荐软件</h3><h3 id="2-2-网站和网页的关系"><a href="#2-2-网站和网页的关系" class="headerlink" title="2.2. 网站和网页的关系"></a>2.2. 网站和网页的关系</h3><h3 id="2-3-网页的显示过程（重要）"><a href="#2-3-网页的显示过程（重要）" class="headerlink" title="2.3. 网页的显示过程（重要）"></a>2.3. 网页的显示过程（重要）</h3><ul><li>用户角度</li><li>前端工程师</li><li>服务器是什么？</li></ul><h3 id="2-4-网页的组成部分"><a href="#2-4-网页的组成部分" class="headerlink" title="2.4. 网页的组成部分"></a>2.4. 网页的组成部分</h3><ul><li>HTML：网页的结构</li><li>CSS：网页的样式（美化）</li><li>JavaScript：网页的交互（灵魂）</li></ul><h2 id="一-浏览器和浏览器内核"><a href="#一-浏览器和浏览器内核" class="headerlink" title="一. 浏览器和浏览器内核"></a>一. 浏览器和浏览器内核</h2><p>常见的浏览器<br>核心部分浏览器内核：渲染引擎</p><h2 id="二-开发自己的第一个网页"><a href="#二-开发自己的第一个网页" class="headerlink" title="二. 开发自己的第一个网页"></a>二. 开发自己的第一个网页</h2><h3 id="2-1-记事本开发网页"><a href="#2-1-记事本开发网页" class="headerlink" title="2.1. 记事本开发网页"></a>2.1. 记事本开发网页</h3><h3 id="2-2-对网页进行补充"><a href="#2-2-对网页进行补充" class="headerlink" title="2.2. 对网页进行补充"></a>2.2. 对网页进行补充</h3><ul><li>增加标记 -&gt; 元素 -&gt; 浏览器 -&gt; 渲染对应的效果</li><li>增加网页的结构<ul><li>html<ul><li>head<ul><li>title</li></ul></li><li>body <ul><li>h1</li><li>p</li><li>div</li><li>span</li></ul></li></ul></li></ul></li></ul><h3 id="2-3-HTML语言"><a href="#2-3-HTML语言" class="headerlink" title="2.3. HTML语言"></a>2.3. HTML语言</h3><ul><li>超文本标记语言<ul><li>为什么表标记语言？</li><li>超文本：图片、音频、视频、超链接</li></ul></li></ul><h3 id="2-4-开发工具VSCode"><a href="#2-4-开发工具VSCode" class="headerlink" title="2.4.开发工具VSCode"></a>2.4.开发工具VSCode</h3><ul><li>安装</li><li>安装插件</li><li>配置</li></ul><h3 id="2-5-剖析元素结构"><a href="#2-5-剖析元素结构" class="headerlink" title="2.5. 剖析元素结构"></a>2.5. 剖析元素结构</h3><ul><li>开始标签</li><li>结束标签</li><li>内容</li><li>属性</li><li>元素的嵌套</li></ul><h3 id="2-6-HTML注释"><a href="#2-6-HTML注释" class="headerlink" title="2.6. HTML注释"></a>2.6. HTML注释</h3><ul><li>理解注释的作用</li><li>HTML注释的编写方法<ul><li>ctrl + &#x2F;</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<h5 id="Java从零到架构师"><a href="#Java从零到架构师" class="headerlink" title="Java从零到架构师"></a>Java从零到架构师</h5><p>课程分为4个部分</p><ol><li>Java语言基础</li><li>JavaWeb</li><li>Java EE 流行框架</li><li>Java EE 项目实战到开发进阶</li></ol><ul><li>学习Java语言、多线程、网络，制作一些小工具（桌面应用、桌面游戏、爬虫等）<ul><li>①Java语言基础</li></ul></li><li>学习后台开发的必备技术，能开发中小型的后台项目，更好地跟后台对接（duǐ 后台）<ul><li>①Java语言基础、②JavaWeb、③JavaEE流行框架</li></ul></li><li>学习后台开发的高级技术，能开发超大型的后台项目（高并发、分布式、微服务等），想成为一名架构师、CTO等<ul><li>①Java语言基础、②JavaWeb、③JavaEE流行框架、④JavaEE项目实战和开发进阶</li></ul></li></ul><h5 id="什么是Java"><a href="#什么是Java" class="headerlink" title="什么是Java"></a>什么是Java</h5><p>Java是全世界最流行的编程语言之一</p><ul><li><p>长期霸占TIOBE编程语言热度排行榜前4名（下图是2023年10月的排行榜）<br><img src="/2023/10/18/java-basic-stage-01/Snip20231019_1.png"></p></li><li></li></ul>]]></content>
     
     
     
     <tags>
       
-      <tag>HTML</tag>
+      <tag>Java</tag>
       
     </tags>
     
@@ -23,17 +23,17 @@
   
   
   <entry>
-    <title>Java基础知识总结</title>
-    <link href="/2023/10/18/java-basic-stage-01/"/>
-    <url>/2023/10/18/java-basic-stage-01/</url>
+    <title>HTML_CSS_01</title>
+    <link href="/2023/10/18/html-css-01/"/>
+    <url>/2023/10/18/html-css-01/</url>
     
-    <content type="html"><![CDATA[<h5 id="Java从零到架构师"><a href="#Java从零到架构师" class="headerlink" title="Java从零到架构师"></a>Java从零到架构师</h5><p>课程分为4个部分</p><ol><li>Java语言基础</li><li>JavaWeb</li><li>Java EE 流行框架</li><li>Java EE 项目实战到开发进阶</li></ol><ul><li>学习Java语言、多线程、网络，制作一些小工具（桌面应用、桌面游戏、爬虫等）<ul><li>①Java语言基础</li></ul></li><li>学习后台开发的必备技术，能开发中小型的后台项目，更好地跟后台对接（duǐ 后台）<ul><li>①Java语言基础、②JavaWeb、③JavaEE流行框架</li></ul></li><li>学习后台开发的高级技术，能开发超大型的后台项目（高并发、分布式、微服务等），想成为一名架构师、CTO等<ul><li>①Java语言基础、②JavaWeb、③JavaEE流行框架、④JavaEE项目实战和开发进阶</li></ul></li></ul><h5 id="什么是Java"><a href="#什么是Java" class="headerlink" title="什么是Java"></a>什么是Java</h5><p>Java是全世界最流行的编程语言之一</p><ul><li><p>长期霸占TIOBE编程语言热度排行榜前4名（下图是2023年10月的排行榜）<br><img src="/./img/Snip20231019_1.png"></p></li><li></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="一-邂逅前端开发"><a href="#一-邂逅前端开发" class="headerlink" title="一. 邂逅前端开发"></a>一. 邂逅前端开发</h2><p><img src="/2023/10/18/html-css-01/Snip20231020_1.png"></p><h3 id="1-1-软件开发、软件开发体系"><a href="#1-1-软件开发、软件开发体系" class="headerlink" title="1.1. 软件开发、软件开发体系"></a>1.1. 软件开发、软件开发体系</h3><h3 id="1-2-完善的应用程序包括哪些？"><a href="#1-2-完善的应用程序包括哪些？" class="headerlink" title="1.2. 完善的应用程序包括哪些？"></a>1.2. 完善的应用程序包括哪些？</h3><ul><li>服务器开发</li><li>iOS开发、Android开发</li><li>Web开发</li><li>桌面开发（window mac os）</li></ul><h3 id="1-3-前端开发的内容"><a href="#1-3-前端开发的内容" class="headerlink" title="1.3. 前端开发的内容"></a>1.3. 前端开发的内容</h3><ul><li>前端开发的任务；<ul><li>web开发、小程序开发</li><li>移动端、桌面端（electron、vscode）、服务器开发（Node）</li></ul></li><li>前端开发的路线</li></ul><h3 id="1-4-学习方法和学习建议"><a href="#1-4-学习方法和学习建议" class="headerlink" title="1.4. 学习方法和学习建议"></a>1.4. 学习方法和学习建议</h3><ul><li>学习任何新的东西的，最好了解它的历史、局限性、本质；</li><li>知识进行分类：<ul><li>常用的知识：必须非常熟练；</li><li>不常用的知识：知道有他，知道在哪里查；</li></ul></li></ul><h2 id="二-邂逅Web开发"><a href="#二-邂逅Web开发" class="headerlink" title="二. 邂逅Web开发"></a>二. 邂逅Web开发</h2><h3 id="2-1-电脑配置、推荐软件"><a href="#2-1-电脑配置、推荐软件" class="headerlink" title="2.1. 电脑配置、推荐软件"></a>2.1. 电脑配置、推荐软件</h3><h3 id="2-2-网站和网页的关系"><a href="#2-2-网站和网页的关系" class="headerlink" title="2.2. 网站和网页的关系"></a>2.2. 网站和网页的关系</h3><h3 id="2-3-网页的显示过程（重要）"><a href="#2-3-网页的显示过程（重要）" class="headerlink" title="2.3. 网页的显示过程（重要）"></a>2.3. 网页的显示过程（重要）</h3><ul><li>用户角度</li><li>前端工程师</li><li>服务器是什么？</li></ul><h3 id="2-4-网页的组成部分"><a href="#2-4-网页的组成部分" class="headerlink" title="2.4. 网页的组成部分"></a>2.4. 网页的组成部分</h3><ul><li>HTML：网页的结构</li><li>CSS：网页的样式（美化）</li><li>JavaScript：网页的交互（灵魂）</li></ul><h2 id="一-浏览器和浏览器内核"><a href="#一-浏览器和浏览器内核" class="headerlink" title="一. 浏览器和浏览器内核"></a>一. 浏览器和浏览器内核</h2><p>常见的浏览器<br>核心部分浏览器内核：渲染引擎</p><h2 id="二-开发自己的第一个网页"><a href="#二-开发自己的第一个网页" class="headerlink" title="二. 开发自己的第一个网页"></a>二. 开发自己的第一个网页</h2><h3 id="2-1-记事本开发网页"><a href="#2-1-记事本开发网页" class="headerlink" title="2.1. 记事本开发网页"></a>2.1. 记事本开发网页</h3><h3 id="2-2-对网页进行补充"><a href="#2-2-对网页进行补充" class="headerlink" title="2.2. 对网页进行补充"></a>2.2. 对网页进行补充</h3><ul><li>增加标记 -&gt; 元素 -&gt; 浏览器 -&gt; 渲染对应的效果</li><li>增加网页的结构<ul><li>html<ul><li>head<ul><li>title</li></ul></li><li>body <ul><li>h1</li><li>p</li><li>div</li><li>span</li></ul></li></ul></li></ul></li></ul><h3 id="2-3-HTML语言"><a href="#2-3-HTML语言" class="headerlink" title="2.3. HTML语言"></a>2.3. HTML语言</h3><ul><li>超文本标记语言<ul><li>为什么表标记语言？</li><li>超文本：图片、音频、视频、超链接</li></ul></li></ul><h3 id="2-4-开发工具VSCode"><a href="#2-4-开发工具VSCode" class="headerlink" title="2.4.开发工具VSCode"></a>2.4.开发工具VSCode</h3><ul><li>安装</li><li>安装插件</li><li>配置</li></ul><h3 id="2-5-剖析元素结构"><a href="#2-5-剖析元素结构" class="headerlink" title="2.5. 剖析元素结构"></a>2.5. 剖析元素结构</h3><ul><li>开始标签</li><li>结束标签</li><li>内容</li><li>属性</li><li>元素的嵌套</li></ul><h3 id="2-6-HTML注释"><a href="#2-6-HTML注释" class="headerlink" title="2.6. HTML注释"></a>2.6. HTML注释</h3><ul><li>理解注释的作用</li><li>HTML注释的编写方法<ul><li>ctrl + &#x2F;</li></ul></li></ul>]]></content>
     
     
     
     <tags>
       
-      <tag>Java</tag>
+      <tag>HTML</tag>
       
     </tags>
     
