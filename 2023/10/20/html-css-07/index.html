@@ -16,26 +16,26 @@
   <meta name="author" content="Yu Zhen Chang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一. 盒子模型1.1. margin margin的设置问题 top&#x2F;right&#x2F;bottom&#x2F;left   margin和padding的选择 margin的传递和折叠 父子的传递 兄弟的折叠   margin进行水平居中 0 auto;    1.2. outline 外轮廓  a, input &amp;#123;   outline: none; &amp;#125; 1.">
+    <meta name="description" content="一. 列表元素1.1. 三种列表 ol &gt; li ul &gt; li dl &gt; dt &gt; dd  1.2. 列表案例 总结思路  二. table元素2.1. table常见 table tr td  2.2. 案例练习股票表格 table &amp;#123;     border-collapse: collapse; &amp;#125; 2.3. table元素 thead tbod">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS盒子模型和背景设置">
-<meta property="og:url" content="https://www.yzcblog.cn/2023/10/20/html-css-06/index.html">
+<meta property="og:title" content="高级元素的使用和常见Emmet语法">
+<meta property="og:url" content="https://www.yzcblog.cn/2023/10/20/html-css-07/index.html">
 <meta property="og:site_name" content="YZC&#39;s Blog">
-<meta property="og:description" content="一. 盒子模型1.1. margin margin的设置问题 top&#x2F;right&#x2F;bottom&#x2F;left   margin和padding的选择 margin的传递和折叠 父子的传递 兄弟的折叠   margin进行水平居中 0 auto;    1.2. outline 外轮廓  a, input &amp;#123;   outline: none; &amp;#125; 1.">
+<meta property="og:description" content="一. 列表元素1.1. 三种列表 ol &gt; li ul &gt; li dl &gt; dt &gt; dd  1.2. 列表案例 总结思路  二. table元素2.1. table常见 table tr td  2.2. 案例练习股票表格 table &amp;#123;     border-collapse: collapse; &amp;#125; 2.3. table元素 thead tbod">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-06/Snip20231020_10.png">
-<meta property="article:published_time" content="2023-10-20T08:43:23.000Z">
-<meta property="article:modified_time" content="2023-10-20T08:43:41.883Z">
+<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-07/Snip20231020_11.png">
+<meta property="article:published_time" content="2023-10-20T09:11:32.000Z">
+<meta property="article:modified_time" content="2023-10-20T09:13:54.769Z">
 <meta property="article:author" content="Yu Zhen Chang">
 <meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.yzcblog.cn/2023/10/20/html-css-06/Snip20231020_10.png">
+<meta name="twitter:image" content="https://www.yzcblog.cn/2023/10/20/html-css-07/Snip20231020_11.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>CSS盒子模型和背景设置 - YZC&#39;s Blog</title>
+  <title>高级元素的使用和常见Emmet语法 - YZC&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="CSS盒子模型和背景设置"></span>
+            <span id="subtitle" data-typed-text="高级元素的使用和常见Emmet语法"></span>
           
         </div>
 
@@ -224,7 +224,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-20 16:43" pubdate>
+        <time datetime="2023-10-20 17:11" pubdate>
           2023年10月20日 下午
         </time>
       </span>
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          700 字
+          548 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          6 分钟
+          5 分钟
         
       </span>
     
@@ -292,59 +292,86 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">CSS盒子模型和背景设置</h1>
+            <h1 id="seo-header">高级元素的使用和常见Emmet语法</h1>
             
             
               <div class="markdown-body">
                 
-                <p><img src="/2023/10/20/html-css-06/Snip20231020_10.png" srcset="/img/loading.gif" lazyload></p>
-<h2 id="一-盒子模型"><a href="#一-盒子模型" class="headerlink" title="一. 盒子模型"></a>一. 盒子模型</h2><h3 id="1-1-margin"><a href="#1-1-margin" class="headerlink" title="1.1. margin"></a>1.1. margin</h3><ul>
-<li>margin的设置问题<ul>
-<li>top&#x2F;right&#x2F;bottom&#x2F;left</li>
+                <p><img src="/2023/10/20/html-css-07/Snip20231020_11.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="一-列表元素"><a href="#一-列表元素" class="headerlink" title="一. 列表元素"></a>一. 列表元素</h2><h3 id="1-1-三种列表"><a href="#1-1-三种列表" class="headerlink" title="1.1. 三种列表"></a>1.1. 三种列表</h3><ul>
+<li>ol &gt; li</li>
+<li>ul &gt; li</li>
+<li>dl &gt; dt &gt; dd</li>
 </ul>
-</li>
-<li>margin和padding的选择</li>
-<li>margin的传递和折叠<ul>
-<li>父子的传递</li>
-<li>兄弟的折叠</li>
+<h3 id="1-2-列表案例"><a href="#1-2-列表案例" class="headerlink" title="1.2. 列表案例"></a>1.2. 列表案例</h3><ul>
+<li>总结思路</li>
 </ul>
-</li>
-<li>margin进行水平居中<ul>
-<li>0 auto;</li>
+<h2 id="二-table元素"><a href="#二-table元素" class="headerlink" title="二. table元素"></a>二. table元素</h2><h3 id="2-1-table常见"><a href="#2-1-table常见" class="headerlink" title="2.1. table常见"></a>2.1. table常见</h3><ul>
+<li>table</li>
+<li>tr</li>
+<li>td</li>
 </ul>
-</li>
-</ul>
-<h3 id="1-2-outline"><a href="#1-2-outline" class="headerlink" title="1.2. outline"></a>1.2. outline</h3><ul>
-<li>外轮廓</li>
-</ul>
-<div class="code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-tag">a</span>, <span class="hljs-selector-tag">input</span> &#123;
-  <span class="hljs-attribute">outline</span>: none;
+<h3 id="2-2-案例练习"><a href="#2-2-案例练习" class="headerlink" title="2.2. 案例练习"></a>2.2. 案例练习</h3><p>股票表格</p>
+<div class="code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-tag">table</span> &#123;
+    <span class="hljs-attribute">border-collapse</span>: collapse;
 &#125;</code></pre></div>
-<h3 id="1-3-box-shadow"><a href="#1-3-box-shadow" class="headerlink" title="1.3. box-shadow"></a>1.3. box-shadow</h3><ul>
-<li>box-shadow: offset-x offset-y blur-radius spread-radius color</li>
+<h3 id="2-3-table元素"><a href="#2-3-table元素" class="headerlink" title="2.3. table元素"></a>2.3. table元素</h3><ul>
+<li>thead</li>
+<li>tbody</li>
+<li>tfoot</li>
+<li>caption</li>
+<li>th</li>
 </ul>
-<h3 id="1-4-text-shadow"><a href="#1-4-text-shadow" class="headerlink" title="1.4. text-shadow"></a>1.4. text-shadow</h3><ul>
-<li>text-shadow: offset offset-y blur color;</li>
+<h3 id="2-4-单元格合并"><a href="#2-4-单元格合并" class="headerlink" title="2.4. 单元格合并"></a>2.4. 单元格合并</h3><ul>
+<li>colspan</li>
+<li>rowspan</li>
+<li>练习: 课程表</li>
 </ul>
-<h3 id="1-5-box-sizing"><a href="#1-5-box-sizing" class="headerlink" title="1.5. box-sizing"></a>1.5. box-sizing</h3><ul>
-<li>content-box</li>
-<li>border-box(常用)</li>
+<h3 id="2-5-作业"><a href="#2-5-作业" class="headerlink" title="2.5. 作业"></a>2.5. 作业</h3><h2 id="三-表单元素"><a href="#三-表单元素" class="headerlink" title="三. 表单元素"></a>三. 表单元素</h2><h3 id="3-1-常见表单"><a href="#3-1-常见表单" class="headerlink" title="3.1. 常见表单"></a>3.1. 常见表单</h3><ul>
+<li>input</li>
+<li>form</li>
+<li>label</li>
+<li>select&#x2F;option</li>
+<li>textarea</li>
 </ul>
-<h3 id="1-6-注意事项"><a href="#1-6-注意事项" class="headerlink" title="1.6. 注意事项"></a>1.6. 注意事项</h3><ul>
-<li>width&#x2F;height&#x2F;margin-top&#x2F;margin-bottom 对于行内非替换元素是无效的</li>
-<li>padding-top&#x2F;bottom, border-top&#x2F;bottom 对于行内非替换元素有特殊效果</li>
-</ul>
-<h3 id="1-7-水平居中"><a href="#1-7-水平居中" class="headerlink" title="1.7. 水平居中"></a>1.7. 水平居中</h3><ul>
-<li>行内级元素<ul>
-<li>text-align: center</li>
+<h3 id="3-2-input元素"><a href="#3-2-input元素" class="headerlink" title="3.2. input元素"></a>3.2. input元素</h3><ul>
+<li>type<ul>
+<li>text</li>
+<li>password</li>
+<li>time</li>
+<li>date</li>
 </ul>
 </li>
-<li>块级元素 有宽度<ul>
-<li>margin: 0 auto;</li>
+<li>disabled&#x2F;autofoucs&#x2F;readonly</li>
+<li>MDN文档</li>
+<li>boolean属性写法</li>
+</ul>
+<h3 id="3-3-input模拟按钮"><a href="#3-3-input模拟按钮" class="headerlink" title="3.3. input模拟按钮"></a>3.3. input模拟按钮</h3><ul>
+<li>三种按钮<ul>
+<li>普通</li>
+<li>重置</li>
+<li>提交</li>
 </ul>
 </li>
+<li>button</li>
 </ul>
-<h2 id="二-案例练习"><a href="#二-案例练习" class="headerlink" title="二. 案例练习"></a>二. 案例练习</h2><h3 id="3-1-京东小按钮"><a href="#3-1-京东小按钮" class="headerlink" title="3.1. 京东小按钮"></a>3.1. 京东小按钮</h3><h3 id="3-2-小米的商品"><a href="#3-2-小米的商品" class="headerlink" title="3.2. 小米的商品"></a>3.2. 小米的商品</h3><h3 id="3-3-B站视频展示"><a href="#3-3-B站视频展示" class="headerlink" title="3.3. B站视频展示"></a>3.3. B站视频展示</h3><h2 id="三-背景设置"><a href="#三-背景设置" class="headerlink" title="三. 背景设置"></a>三. 背景设置</h2><h3 id="3-1-background-image"><a href="#3-1-background-image" class="headerlink" title="3.1. background-image"></a>3.1. background-image</h3><h3 id="3-2-background-repeat"><a href="#3-2-background-repeat" class="headerlink" title="3.2. background-repeat"></a>3.2. background-repeat</h3><h3 id="3-3-background-size"><a href="#3-3-background-size" class="headerlink" title="3.3. background-size"></a>3.3. background-size</h3><h3 id="3-4-background-position"><a href="#3-4-background-position" class="headerlink" title="3.4. background-position"></a>3.4. background-position</h3><h3 id="3-5-background-attachment"><a href="#3-5-background-attachment" class="headerlink" title="3.5. background-attachment"></a>3.5. background-attachment</h3><h3 id="3-6-background"><a href="#3-6-background" class="headerlink" title="3.6. background"></a>3.6. background</h3><h3 id="3-7-background-image和img区别和选择"><a href="#3-7-background-image和img区别和选择" class="headerlink" title="3.7. background-image和img区别和选择"></a>3.7. background-image和img区别和选择</h3>
+<h3 id="3-4-input和label结合"><a href="#3-4-input和label结合" class="headerlink" title="3.4. input和label结合"></a>3.4. input和label结合</h3><h3 id="3-5-radio-checkbox"><a href="#3-5-radio-checkbox" class="headerlink" title="3.5. radio&#x2F;checkbox"></a>3.5. radio&#x2F;checkbox</h3><ul>
+<li>name</li>
+<li>value</li>
+</ul>
+<h3 id="3-6-textarea-select-option"><a href="#3-6-textarea-select-option" class="headerlink" title="3.6. textarea&#x2F;select&#x2F;option"></a>3.6. textarea&#x2F;select&#x2F;option</h3><h3 id="3-7-form表单"><a href="#3-7-form表单" class="headerlink" title="3.7. form表单"></a>3.7. form表单</h3><ul>
+<li>action 服务器地址</li>
+<li>method<ul>
+<li>get&#x2F;post</li>
+</ul>
+</li>
+<li>target</li>
+<li>模拟百度一下</li>
+</ul>
+<h2 id="四-Emmet"><a href="#四-Emmet" class="headerlink" title="四. Emmet"></a>四. Emmet</h2><ul>
+<li>了解, 用到的时候知道可以这么写, 提高一点效率即可</li>
+</ul>
+
                 
               </div>
             
@@ -368,8 +395,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>CSS盒子模型和背景设置</div>
-      <div>https://www.yzcblog.cn/2023/10/20/html-css-06/</div>
+      <div>高级元素的使用和常见Emmet语法</div>
+      <div>https://www.yzcblog.cn/2023/10/20/html-css-07/</div>
     </div>
     <div class="license-meta">
       
@@ -413,18 +440,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/20/html-css-07/" title="高级元素的使用和常见Emmet语法">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">高级元素的使用和常见Emmet语法</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/20/html-css-05/" title="CSS属性特征和CSS的盒子模型">
-                        <span class="hidden-mobile">CSS属性特征和CSS的盒子模型</span>
+                      <a href="/2023/10/20/html-css-06/" title="CSS盒子模型和背景设置">
+                        <span class="hidden-mobile">CSS盒子模型和背景设置</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
