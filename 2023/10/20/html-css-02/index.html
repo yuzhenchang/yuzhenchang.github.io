@@ -16,26 +16,26 @@
   <meta name="author" content="Yu Zhen Chang">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一. 邂逅前端开发 1.1. 软件开发、软件开发体系1.2. 完善的应用程序包括哪些？ 服务器开发 iOS开发、Android开发 Web开发 桌面开发（window mac os）  1.3. 前端开发的内容 前端开发的任务； web开发、小程序开发 移动端、桌面端（electron、vscode）、服务器开发（Node）   前端开发的路线  1.4. 学习方法和学习建议 学习任何新的东西的，">
+    <meta name="description" content="一. HTML结构 1.1. 文档声明1.2. html元素 lang  1.3. head 元数据(配置信息) meta -&gt; charset -&gt; utf-8 title -&gt; 标题    二. body元素2.1.  h1~h6 演练 区别  2.2. p元素 演练 区分  2.3. 案例练习2.4. img元素 两个属性 src alt: 占位   地址 网络地址 本地地">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML_CSS_01">
-<meta property="og:url" content="https://www.yzcblog.cn/2023/10/18/html-css-01/index.html">
+<meta property="og:title" content="HTML_CSS_02">
+<meta property="og:url" content="https://www.yzcblog.cn/2023/10/20/html-css-02/index.html">
 <meta property="og:site_name" content="YZC&#39;s Blog">
-<meta property="og:description" content="一. 邂逅前端开发 1.1. 软件开发、软件开发体系1.2. 完善的应用程序包括哪些？ 服务器开发 iOS开发、Android开发 Web开发 桌面开发（window mac os）  1.3. 前端开发的内容 前端开发的任务； web开发、小程序开发 移动端、桌面端（electron、vscode）、服务器开发（Node）   前端开发的路线  1.4. 学习方法和学习建议 学习任何新的东西的，">
+<meta property="og:description" content="一. HTML结构 1.1. 文档声明1.2. html元素 lang  1.3. head 元数据(配置信息) meta -&gt; charset -&gt; utf-8 title -&gt; 标题    二. body元素2.1.  h1~h6 演练 区别  2.2. p元素 演练 区分  2.3. 案例练习2.4. img元素 两个属性 src alt: 占位   地址 网络地址 本地地">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.yzcblog.cn/2023/10/18/html-css-01/Snip20231020_1.png">
-<meta property="article:published_time" content="2023-10-18T08:37:49.000Z">
-<meta property="article:modified_time" content="2023-10-20T06:34:07.120Z">
+<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-02/Snip20231020_2.png">
+<meta property="article:published_time" content="2023-10-20T06:49:49.000Z">
+<meta property="article:modified_time" content="2023-10-20T06:54:20.711Z">
 <meta property="article:author" content="Yu Zhen Chang">
 <meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.yzcblog.cn/2023/10/18/html-css-01/Snip20231020_1.png">
+<meta name="twitter:image" content="https://www.yzcblog.cn/2023/10/20/html-css-02/Snip20231020_2.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>HTML_CSS_01 - YZC&#39;s Blog</title>
+  <title>HTML_CSS_02 - YZC&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="HTML_CSS_01"></span>
+            <span id="subtitle" data-typed-text="HTML_CSS_02"></span>
           
         </div>
 
@@ -224,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-18 16:37" pubdate>
-          2023年10月18日 下午
+        <time datetime="2023-10-20 14:49" pubdate>
+          2023年10月20日 下午
         </time>
       </span>
     
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          611 字
+          490 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          6 分钟
+          5 分钟
         
       </span>
     
@@ -292,88 +292,97 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">HTML_CSS_01</h1>
+            <h1 id="seo-header">HTML_CSS_02</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="一-邂逅前端开发"><a href="#一-邂逅前端开发" class="headerlink" title="一. 邂逅前端开发"></a>一. 邂逅前端开发</h2><p><img src="/2023/10/18/html-css-01/Snip20231020_1.png" srcset="/img/loading.gif" lazyload></p>
-<h3 id="1-1-软件开发、软件开发体系"><a href="#1-1-软件开发、软件开发体系" class="headerlink" title="1.1. 软件开发、软件开发体系"></a>1.1. 软件开发、软件开发体系</h3><h3 id="1-2-完善的应用程序包括哪些？"><a href="#1-2-完善的应用程序包括哪些？" class="headerlink" title="1.2. 完善的应用程序包括哪些？"></a>1.2. 完善的应用程序包括哪些？</h3><ul>
-<li>服务器开发</li>
-<li>iOS开发、Android开发</li>
-<li>Web开发</li>
-<li>桌面开发（window mac os）</li>
+                <h2 id="一-HTML结构"><a href="#一-HTML结构" class="headerlink" title="一. HTML结构"></a>一. HTML结构</h2><p><img src="/2023/10/20/html-css-02/Snip20231020_2.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="1-1-文档声明"><a href="#1-1-文档声明" class="headerlink" title="1.1. 文档声明"></a>1.1. 文档声明</h3><h3 id="1-2-html元素"><a href="#1-2-html元素" class="headerlink" title="1.2. html元素"></a>1.2. html元素</h3><ul>
+<li>lang</li>
 </ul>
-<h3 id="1-3-前端开发的内容"><a href="#1-3-前端开发的内容" class="headerlink" title="1.3. 前端开发的内容"></a>1.3. 前端开发的内容</h3><ul>
-<li>前端开发的任务；<ul>
-<li>web开发、小程序开发</li>
-<li>移动端、桌面端（electron、vscode）、服务器开发（Node）</li>
-</ul>
-</li>
-<li>前端开发的路线</li>
-</ul>
-<h3 id="1-4-学习方法和学习建议"><a href="#1-4-学习方法和学习建议" class="headerlink" title="1.4. 学习方法和学习建议"></a>1.4. 学习方法和学习建议</h3><ul>
-<li>学习任何新的东西的，最好了解它的历史、局限性、本质；</li>
-<li>知识进行分类：<ul>
-<li>常用的知识：必须非常熟练；</li>
-<li>不常用的知识：知道有他，知道在哪里查；</li>
+<h3 id="1-3-head"><a href="#1-3-head" class="headerlink" title="1.3. head"></a>1.3. head</h3><ul>
+<li>元数据(配置信息)<ul>
+<li>meta -&gt; charset -&gt; utf-8</li>
+<li>title -&gt; 标题</li>
 </ul>
 </li>
 </ul>
-<h2 id="二-邂逅Web开发"><a href="#二-邂逅Web开发" class="headerlink" title="二. 邂逅Web开发"></a>二. 邂逅Web开发</h2><h3 id="2-1-电脑配置、推荐软件"><a href="#2-1-电脑配置、推荐软件" class="headerlink" title="2.1. 电脑配置、推荐软件"></a>2.1. 电脑配置、推荐软件</h3><h3 id="2-2-网站和网页的关系"><a href="#2-2-网站和网页的关系" class="headerlink" title="2.2. 网站和网页的关系"></a>2.2. 网站和网页的关系</h3><h3 id="2-3-网页的显示过程（重要）"><a href="#2-3-网页的显示过程（重要）" class="headerlink" title="2.3. 网页的显示过程（重要）"></a>2.3. 网页的显示过程（重要）</h3><ul>
-<li>用户角度</li>
-<li>前端工程师</li>
-<li>服务器是什么？</li>
+<h2 id="二-body元素"><a href="#二-body元素" class="headerlink" title="二. body元素"></a>二. body元素</h2><h3 id="2-1-h1-h6"><a href="#2-1-h1-h6" class="headerlink" title="2.1.  h1~h6"></a>2.1.  h1~h6</h3><ul>
+<li>演练</li>
+<li>区别</li>
 </ul>
-<h3 id="2-4-网页的组成部分"><a href="#2-4-网页的组成部分" class="headerlink" title="2.4. 网页的组成部分"></a>2.4. 网页的组成部分</h3><ul>
-<li>HTML：网页的结构</li>
-<li>CSS：网页的样式（美化）</li>
-<li>JavaScript：网页的交互（灵魂）</li>
+<h3 id="2-2-p元素"><a href="#2-2-p元素" class="headerlink" title="2.2. p元素"></a>2.2. p元素</h3><ul>
+<li>演练</li>
+<li>区分</li>
 </ul>
-<h2 id="一-浏览器和浏览器内核"><a href="#一-浏览器和浏览器内核" class="headerlink" title="一. 浏览器和浏览器内核"></a>一. 浏览器和浏览器内核</h2><p>常见的浏览器<br>核心部分浏览器内核：渲染引擎</p>
-<h2 id="二-开发自己的第一个网页"><a href="#二-开发自己的第一个网页" class="headerlink" title="二. 开发自己的第一个网页"></a>二. 开发自己的第一个网页</h2><h3 id="2-1-记事本开发网页"><a href="#2-1-记事本开发网页" class="headerlink" title="2.1. 记事本开发网页"></a>2.1. 记事本开发网页</h3><h3 id="2-2-对网页进行补充"><a href="#2-2-对网页进行补充" class="headerlink" title="2.2. 对网页进行补充"></a>2.2. 对网页进行补充</h3><ul>
-<li>增加标记 -&gt; 元素 -&gt; 浏览器 -&gt; 渲染对应的效果</li>
-<li>增加网页的结构<ul>
-<li>html<ul>
-<li>head<ul>
+<h3 id="2-3-案例练习"><a href="#2-3-案例练习" class="headerlink" title="2.3. 案例练习"></a>2.3. 案例练习</h3><h3 id="2-4-img元素"><a href="#2-4-img元素" class="headerlink" title="2.4. img元素"></a>2.4. img元素</h3><ul>
+<li>两个属性<ul>
+<li>src</li>
+<li>alt: 占位</li>
+</ul>
+</li>
+<li>地址<ul>
+<li>网络地址</li>
+<li>本地地址<ul>
+<li>绝对路径</li>
+<li>相对路径</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-5-a元素-anchor"><a href="#2-5-a元素-anchor" class="headerlink" title="2.5. a元素(anchor)"></a>2.5. a元素(anchor)</h3><ul>
+<li>两个属性:<ul>
+<li>href</li>
+<li>target<ul>
+<li>_self</li>
+<li>_blank</li>
+<li>_parent</li>
+<li>_top</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>本页面的锚点链接</li>
+<li>a元素和img元素</li>
+</ul>
+<h3 id="2-6-iframe元素"><a href="#2-6-iframe元素" class="headerlink" title="2.6. iframe元素"></a>2.6. iframe元素</h3><ul>
+<li>嵌套网页</li>
+<li>某些网页禁止嵌套(原理)</li>
+<li>和a元素结合(target另外两个值)</li>
+</ul>
+<h3 id="2-6-div-span"><a href="#2-6-div-span" class="headerlink" title="2.6. div&#x2F;span"></a>2.6. div&#x2F;span</h3><ul>
+<li>历史</li>
+<li>案例</li>
+</ul>
+<h3 id="2-7-不常用元素"><a href="#2-7-不常用元素" class="headerlink" title="2.7. 不常用元素"></a>2.7. 不常用元素</h3><ul>
+<li>strong</li>
+<li>i</li>
+<li>code</li>
+<li>br</li>
+<li>…</li>
+</ul>
+<h3 id="2-8-全局属性"><a href="#2-8-全局属性" class="headerlink" title="2.8. 全局属性"></a>2.8. 全局属性</h3><ul>
+<li>id</li>
+<li>class</li>
+<li>style</li>
 <li>title</li>
 </ul>
-</li>
-<li>body <ul>
-<li>h1</li>
-<li>p</li>
-<li>div</li>
-<li>span</li>
+<h2 id="三-额外知识"><a href="#三-额外知识" class="headerlink" title="三. 额外知识"></a>三. 额外知识</h2><h3 id="3-1-字符实体"><a href="#3-1-字符实体" class="headerlink" title="3.1. 字符实体"></a>3.1. 字符实体</h3><ul>
+<li>为什么需要字符实体;</li>
+<li>三个:<div class="code-wrapper"><pre><code class="hljs 1c"><span class="hljs-meta">&amp;nbsp;</span>
+<span class="hljs-meta">&amp;lt;</span>
+<span class="hljs-meta">&amp;gt;</span></code></pre></div></li>
+</ul>
+<h3 id="3-2-URL"><a href="#3-2-URL" class="headerlink" title="3.2. URL"></a>3.2. URL</h3><ul>
+<li>URL的格式:<ul>
+<li>协议:&#x2F;&#x2F;主机:端口&#x2F;路径&#x2F;文件名?查询#片段id</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-3-HTML语言"><a href="#2-3-HTML语言" class="headerlink" title="2.3. HTML语言"></a>2.3. HTML语言</h3><ul>
-<li>超文本标记语言<ul>
-<li>为什么表标记语言？</li>
-<li>超文本：图片、音频、视频、超链接</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-4-开发工具VSCode"><a href="#2-4-开发工具VSCode" class="headerlink" title="2.4.开发工具VSCode"></a>2.4.开发工具VSCode</h3><ul>
-<li>安装</li>
-<li>安装插件</li>
-<li>配置</li>
-</ul>
-<h3 id="2-5-剖析元素结构"><a href="#2-5-剖析元素结构" class="headerlink" title="2.5. 剖析元素结构"></a>2.5. 剖析元素结构</h3><ul>
-<li>开始标签</li>
-<li>结束标签</li>
-<li>内容</li>
-<li>属性</li>
-<li>元素的嵌套</li>
-</ul>
-<h3 id="2-6-HTML注释"><a href="#2-6-HTML注释" class="headerlink" title="2.6. HTML注释"></a>2.6. HTML注释</h3><ul>
-<li>理解注释的作用</li>
-<li>HTML注释的编写方法<ul>
-<li>ctrl + &#x2F;</li>
+<li>和URI的区别:<ul>
+<li>URI:标志符</li>
+<li>URL: 定位符(网络地址)</li>
 </ul>
 </li>
 </ul>
@@ -401,8 +410,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>HTML_CSS_01</div>
-      <div>https://www.yzcblog.cn/2023/10/18/html-css-01/</div>
+      <div>HTML_CSS_02</div>
+      <div>https://www.yzcblog.cn/2023/10/20/html-css-02/</div>
     </div>
     <div class="license-meta">
       
@@ -414,7 +423,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年10月18日</div>
+          <div>2023年10月20日</div>
         </div>
       
       
@@ -446,18 +455,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/20/html-css-02/" title="HTML_CSS_02">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">HTML_CSS_02</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/18/java-basic-stage-01/" title="Java基础知识总结">
-                        <span class="hidden-mobile">Java基础知识总结</span>
+                      <a href="/2023/10/18/html-css-01/" title="HTML_CSS_01">
+                        <span class="hidden-mobile">HTML_CSS_01</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
