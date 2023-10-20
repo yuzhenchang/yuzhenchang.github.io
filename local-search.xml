@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>CSS盒子模型和背景设置</title>
+    <link href="/2023/10/20/html-css-06/"/>
+    <url>/2023/10/20/html-css-06/</url>
+    
+    <content type="html"><![CDATA[<p><img src="/2023/10/20/html-css-06/Snip20231020_10.png"></p><h2 id="一-盒子模型"><a href="#一-盒子模型" class="headerlink" title="一. 盒子模型"></a>一. 盒子模型</h2><h3 id="1-1-margin"><a href="#1-1-margin" class="headerlink" title="1.1. margin"></a>1.1. margin</h3><ul><li>margin的设置问题<ul><li>top&#x2F;right&#x2F;bottom&#x2F;left</li></ul></li><li>margin和padding的选择</li><li>margin的传递和折叠<ul><li>父子的传递</li><li>兄弟的折叠</li></ul></li><li>margin进行水平居中<ul><li>0 auto;</li></ul></li></ul><h3 id="1-2-outline"><a href="#1-2-outline" class="headerlink" title="1.2. outline"></a>1.2. outline</h3><ul><li>外轮廓</li></ul><div class="code-wrapper"><pre><code class="hljs css"><span class="hljs-selector-tag">a</span>, <span class="hljs-selector-tag">input</span> &#123;  <span class="hljs-attribute">outline</span>: none;&#125;</code></pre></div><h3 id="1-3-box-shadow"><a href="#1-3-box-shadow" class="headerlink" title="1.3. box-shadow"></a>1.3. box-shadow</h3><ul><li>box-shadow: offset-x offset-y blur-radius spread-radius color</li></ul><h3 id="1-4-text-shadow"><a href="#1-4-text-shadow" class="headerlink" title="1.4. text-shadow"></a>1.4. text-shadow</h3><ul><li>text-shadow: offset offset-y blur color;</li></ul><h3 id="1-5-box-sizing"><a href="#1-5-box-sizing" class="headerlink" title="1.5. box-sizing"></a>1.5. box-sizing</h3><ul><li>content-box</li><li>border-box(常用)</li></ul><h3 id="1-6-注意事项"><a href="#1-6-注意事项" class="headerlink" title="1.6. 注意事项"></a>1.6. 注意事项</h3><ul><li>width&#x2F;height&#x2F;margin-top&#x2F;margin-bottom 对于行内非替换元素是无效的</li><li>padding-top&#x2F;bottom, border-top&#x2F;bottom 对于行内非替换元素有特殊效果</li></ul><h3 id="1-7-水平居中"><a href="#1-7-水平居中" class="headerlink" title="1.7. 水平居中"></a>1.7. 水平居中</h3><ul><li>行内级元素<ul><li>text-align: center</li></ul></li><li>块级元素 有宽度<ul><li>margin: 0 auto;</li></ul></li></ul><h2 id="二-案例练习"><a href="#二-案例练习" class="headerlink" title="二. 案例练习"></a>二. 案例练习</h2><h3 id="3-1-京东小按钮"><a href="#3-1-京东小按钮" class="headerlink" title="3.1. 京东小按钮"></a>3.1. 京东小按钮</h3><h3 id="3-2-小米的商品"><a href="#3-2-小米的商品" class="headerlink" title="3.2. 小米的商品"></a>3.2. 小米的商品</h3><h3 id="3-3-B站视频展示"><a href="#3-3-B站视频展示" class="headerlink" title="3.3. B站视频展示"></a>3.3. B站视频展示</h3><h2 id="三-背景设置"><a href="#三-背景设置" class="headerlink" title="三. 背景设置"></a>三. 背景设置</h2><h3 id="3-1-background-image"><a href="#3-1-background-image" class="headerlink" title="3.1. background-image"></a>3.1. background-image</h3><h3 id="3-2-background-repeat"><a href="#3-2-background-repeat" class="headerlink" title="3.2. background-repeat"></a>3.2. background-repeat</h3><h3 id="3-3-background-size"><a href="#3-3-background-size" class="headerlink" title="3.3. background-size"></a>3.3. background-size</h3><h3 id="3-4-background-position"><a href="#3-4-background-position" class="headerlink" title="3.4. background-position"></a>3.4. background-position</h3><h3 id="3-5-background-attachment"><a href="#3-5-background-attachment" class="headerlink" title="3.5. background-attachment"></a>3.5. background-attachment</h3><h3 id="3-6-background"><a href="#3-6-background" class="headerlink" title="3.6. background"></a>3.6. background</h3><h3 id="3-7-background-image和img区别和选择"><a href="#3-7-background-image和img区别和选择" class="headerlink" title="3.7. background-image和img区别和选择"></a>3.7. background-image和img区别和选择</h3>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>HTML</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>CSS属性特征和CSS的盒子模型</title>
     <link href="/2023/10/20/html-css-05/"/>
     <url>/2023/10/20/html-css-05/</url>
