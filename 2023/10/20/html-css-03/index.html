@@ -1,382 +1,454 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/yzcBlog.jpeg">
-  <link rel="icon" href="/img/yzcBlog.jpeg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Yu Zhen Chang">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="一. 知识点补充 1.1. 字符实体 为什么需要字符实体; 三个:&amp;nbsp; &amp;lt; &amp;gt;  1.2. URL URL的格式: 协议:&#x2F;&#x2F;主机:端口&#x2F;路径&#x2F;文件名?查询#片段id   和URI的区别: URI:标志符 URL: 定位符(网络地址)    1.3. 元素语义化 用正确的元素去做正确的事情  1.4. SEO优化">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>邂逅CSS样式 | YZC's Blog</title><meta name="author" content="Yu Zhen Chang"><meta name="copyright" content="Yu Zhen Chang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一. 知识点补充 1.1. 字符实体 思考：我们编写的HTML代码会被浏览器解析 如下代码是如何被解析的呢？ 如果你使用小于号（&lt;），浏览器会将其后的文本解析为一个tag。 但是某些情况下，我们确实需要编写一个小于号（&lt;） 这个时候我们就可以使用字符实体    HTML 实体是一段以连字号（&amp;）开头、以分号（;）结尾的文本(字符串); 实体常常用于显示保留字符（这些字符会被解析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="邂逅CSS样式">
 <meta property="og:url" content="https://www.yzcblog.cn/2023/10/20/html-css-03/index.html">
 <meta property="og:site_name" content="YZC&#39;s Blog">
-<meta property="og:description" content="一. 知识点补充 1.1. 字符实体 为什么需要字符实体; 三个:&amp;nbsp; &amp;lt; &amp;gt;  1.2. URL URL的格式: 协议:&#x2F;&#x2F;主机:端口&#x2F;路径&#x2F;文件名?查询#片段id   和URI的区别: URI:标志符 URL: 定位符(网络地址)    1.3. 元素语义化 用正确的元素去做正确的事情  1.4. SEO优化">
+<meta property="og:description" content="一. 知识点补充 1.1. 字符实体 思考：我们编写的HTML代码会被浏览器解析 如下代码是如何被解析的呢？ 如果你使用小于号（&lt;），浏览器会将其后的文本解析为一个tag。 但是某些情况下，我们确实需要编写一个小于号（&lt;） 这个时候我们就可以使用字符实体    HTML 实体是一段以连字号（&amp;）开头、以分号（;）结尾的文本(字符串); 实体常常用于显示保留字符（这些字符会被解析">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-03/Snip20231020_3.png">
-<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-03/Snip20231020_4.png">
-<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-03/Snip20231020_6.png">
-<meta property="og:image" content="https://www.yzcblog.cn/2023/10/20/html-css-03/Snip20231020_7.png">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2023-10-20T07:15:11.000Z">
-<meta property="article:modified_time" content="2023-10-25T03:39:09.124Z">
+<meta property="article:modified_time" content="2023-10-25T09:12:13.446Z">
 <meta property="article:author" content="Yu Zhen Chang">
 <meta property="article:tag" content="HTML">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.yzcblog.cn/2023/10/20/html-css-03/Snip20231020_3.png">
-  
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
-  
-  <title>邂逅CSS样式 - YZC&#39;s Blog</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.yzcblog.cn","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>余小鱼&#39;s Blog</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>友链</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.jpeg') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="邂逅CSS样式"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-20 15:15" pubdate>
-          2023年10月20日 下午
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          655 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          6 分钟
-        
-      </span>
-    
-
-    
-    
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.yzcblog.cn/2023/10/20/html-css-03/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '邂逅CSS样式',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-25 17:12:13'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
       
-        <span id="busuanzi_container_page_pv" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="busuanzi_value_page_pv"></span> 次
-        </span>
-        
+        get: key => {
+          const itemStr = localStorage.getItem(key)
       
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
     
-  </div>
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
 
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
 
-        
-      </div>
-
-      
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
+        document.head.appendChild(script)
+      })
     
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
       
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">邂逅CSS样式</h1>
-            
-            
-              <div class="markdown-body">
-                
-                <h2 id="一-知识点补充"><a href="#一-知识点补充" class="headerlink" title="一. 知识点补充"></a>一. 知识点补充</h2><p><img src="/2023/10/20/html-css-03/Snip20231020_3.png" srcset="/img/loading.gif" lazyload></p>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="YZC's Blog"><span class="site-name">YZC's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">邂逅CSS样式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-20T07:15:11.000Z" title="发表于 2023-10-20 15:15:11">2023-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-25T09:12:13.446Z" title="更新于 2023-10-25 17:12:13">2023-10-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="邂逅CSS样式"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一-知识点补充"><a href="#一-知识点补充" class="headerlink" title="一. 知识点补充"></a>一. 知识点补充</h2><p><img src="/2023/10/20/html-css-03/Snip20231020_3.png"></p>
 <h3 id="1-1-字符实体"><a href="#1-1-字符实体" class="headerlink" title="1.1. 字符实体"></a>1.1. 字符实体</h3><ul>
-<li>为什么需要字符实体;</li>
-<li>三个:<div class="code-wrapper"><pre><code class="hljs 1c"><span class="hljs-meta">&amp;nbsp;</span>
-<span class="hljs-meta">&amp;lt;</span>
-<span class="hljs-meta">&amp;gt;</span></code></pre></div></li>
+<li>思考：我们编写的HTML代码会被浏览器解析</li>
+<li>如下代码是如何被解析的呢？<ul>
+<li>如果你使用小于号（&lt;），浏览器会将其后的文本解析为一个tag。</li>
+<li>但是某些情况下，我们确实需要编写一个小于号（&lt;）</li>
+<li>这个时候我们就可以使用字符实体</li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_8.png"></li>
+</ul>
+</li>
+<li><code>HTML 实体是一段以连字号（&amp;）开头、以分号（;）结尾的文本(字符串);</code><ul>
+<li>实体常常用于显示保留字符（这些字符会被解析为 HTML 代码）和不可见的字符（如“不换行空格”）</li>
+<li>你也可以用实体来代替其他难以用标准键盘键入的字符</li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_9.png"></li>
+</ul>
+</li>
+<li>常见的字符实体:<ul>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_10.png"></li>
+</ul>
+</li>
 </ul>
 <h3 id="1-2-URL"><a href="#1-2-URL" class="headerlink" title="1.2. URL"></a>1.2. URL</h3><ul>
+<li>URL 代表着是统一资源定位符（Uniform Resource Locator）<ul>
+<li>通俗点说：URL 无非就是一个给定的独特资源在 Web 上的地址<ul>
+<li>理论上说，每个有效的 URL 都指向一个唯一的资源</li>
+<li>这个资源可以是一个 HTML 页面，一个 CSS 文档，一幅图像，等等</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>URL的格式:<ul>
-<li>协议:&#x2F;&#x2F;主机:端口&#x2F;路径&#x2F;文件名?查询#片段id</li>
+<li></li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_11.png"></li>
 </ul>
 </li>
 <li>和URI的区别:<ul>
-<li>URI:标志符</li>
-<li>URL: 定位符(网络地址)</li>
+<li>URI &#x3D; Uniform Resource Identifier 统一资源标志符，用于标识 Web 技术使用的逻辑或物理资源。</li>
+<li>URL &#x3D; Uniform Resource Locator 统一资源定位符，俗称网络地址，相当于网络中的门牌号</li>
 </ul>
 </li>
+<li>URI在某一个规则下能把一个资源独一无二的识别出来<ul>
+<li>URL作为一个网络Web资源的地址，可以唯一将一个资源识别出来，所以URL是一个URI</li>
+<li>所以URL是URI的一个子集</li>
+<li>但是URI并不一定是URL</li>
+</ul>
+</li>
+<li>locators are also identifiers, <code>so every URL is also a URI, but there are URIs which are not URLs</code></li>
 </ul>
 <h3 id="1-3-元素语义化"><a href="#1-3-元素语义化" class="headerlink" title="1.3. 元素语义化"></a>1.3. 元素语义化</h3><ul>
 <li>用正确的元素去做正确的事情</li>
+<li>理论上来说，所有的HTML元素，我们都能实现相同的事情<ul>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_12.png"></li>
+</ul>
+</li>
+<li>标签语义化的好处<ul>
+<li>方便代码维护</li>
+<li>减少让开发者之间的沟通成本</li>
+<li>能让语音合成工具正确识别网页元素的用途，以便作出正确的反应</li>
+<li>有利于SEO</li>
+</ul>
+</li>
 </ul>
 <h3 id="1-4-SEO优化"><a href="#1-4-SEO优化" class="headerlink" title="1.4. SEO优化"></a>1.4. SEO优化</h3><ul>
-<li>SEO原理</li>
-<li>过程&#x2F;流程</li>
+<li>SEO原理<ul>
+<li>搜索引擎优化（英语：search engine optimization，缩写为SEO）是通过了解搜索引擎的运作规则来调整网站，以及提高网站在有关搜索引擎内排名的方式。</li>
+</ul>
+</li>
+<li>过程&#x2F;流程<ul>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_13.png"></li>
+</ul>
+</li>
 </ul>
 <h3 id="1-5-字符串编码"><a href="#1-5-字符串编码" class="headerlink" title="1.5. 字符串编码"></a>1.5. 字符串编码</h3><ul>
-<li>计算机的本质010101</li>
-<li>编码&#x2F;解码</li>
-<li>历史: 文章链接(了解)</li>
+<li>计算机是干什么的?<ul>
+<li>计算机一开始发明出来时是用来解决数字计算问题的，后来人们发现，计算机还可以做更多的事,例如文本处理</li>
+<li>但计算机其实挺笨的，它只“认识”010110111000…这样由0和1两个数字组成的二进制数字</li>
+<li>这是因为计算机的底层硬件实现就是用电路的开和闭两种状态来表示0和1两个数字的</li>
+<li>因此，计算机只可以直接存储和处理二进制数字</li>
+</ul>
+</li>
+<li>编码&#x2F;解码<ul>
+<li>为了在计算机上也能表示、存储和处理像文字、符号等等之类的字符，就必须将这些字符转换成二进制数字</li>
+<li>当然，肯定不是我们想怎么转换就怎么转换，否则就会造成同一段二进制数字在不同计算机上显示出来的字符不一样的情况，因此必须得定一个统一的、标准的转换规则</li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_14.png"></li>
+</ul>
+</li>
 </ul>
 <h2 id="二-邂逅CSS"><a href="#二-邂逅CSS" class="headerlink" title="二. 邂逅CSS"></a>二. 邂逅CSS</h2><h3 id="2-1-认识CSS"><a href="#2-1-认识CSS" class="headerlink" title="2.1. 认识CSS"></a>2.1. 认识CSS</h3><ul>
-<li>CSS的概念</li>
-<li>作用: 美化网页<ul>
-<li>方式一: 添加各种样式;</li>
-<li>方式二: 布局;</li>
+<li>CSS的概念<ul>
+<li>CSS表示层叠样式表（Cascading Style Sheet，简称：CSS，又称为又称串样式列表、级联样式表、串接样式表、阶层式样式表）是为网页添加样式的代码</li>
+<li>CSS是一种语言吗？(知道即可)<ul>
+<li>MDN解释：CSS 也不是真正的编程语言，甚至不是标记语言。它是一门样式表语言</li>
+<li>维基百科解释：是一种计算机语言，但是不算是一种编程语言</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>作用: CSS的出现是为了美化HTML的，并且让结构（HTML）与样式（CSS）分离<ul>
+<li>美化方式一：为HTML添加各种各样的样式，比如颜色、字体、大小、下划线等等</li>
+<li>美化方式二：对HTML进行布局，按照某种结构显示（CSS进行布局 – 浮动、flex、grid）</li>
 </ul>
 </li>
 <li>历史:<ul>
-<li>CSS3 -&gt; Modules</li>
+<li>早期的网页都是通过HTML来编写的，但是我们希望HTML页面可以更加丰富:<ul>
+<li>这个时候就增加了很多具备特殊样式的元素：比如i、strong、del等等</li>
+<li>后来也有不同的浏览器实现各自的样式语言，但是没有统一的规划</li>
+<li>1994年，哈肯·维姆·莱和伯特·波斯合作设计CSS，在1996年的时候发布了CSS1</li>
+<li>直到1997年初，W3C组织才专门成立了CSS的工作组，1998年5月发布了CSS2</li>
+<li>在2006~2009非常流行 “DIV+CSS”布局的方式来替代所有的html标签</li>
+<li>从CSS3开始，所有的CSS分成了不同的模块（modules），每一个“modules”都有于CSS2中额外增加的功能，以及向后兼容</li>
+<li>直到2011年6月7日，CSS 3 Color Module终于发布为W3C Recommendation</li>
 </ul>
 </li>
 </ul>
-<h3 id="2-2-CSS样式"><a href="#2-2-CSS样式" class="headerlink" title="2.2. CSS样式"></a>2.2. CSS样式</h3><h4 id="2-2-1-CSS样式规则顺序"><a href="#2-2-1-CSS样式规则顺序" class="headerlink" title="2.2.1 CSS样式规则顺序"></a>2.2.1 CSS样式规则顺序</h4><p><img src="/2023/10/20/html-css-03/Snip20231020_4.png" srcset="/img/loading.gif" lazyload></p>
-<div class="code-wrapper"><pre><code class="hljs css">属性名: 属性值</code></pre></div>
-<h4 id="2-2-2-CSS常见属性分类"><a href="#2-2-2-CSS常见属性分类" class="headerlink" title="2.2.2 CSS常见属性分类"></a>2.2.2 CSS常见属性分类</h4><p><img src="/2023/10/20/html-css-03/Snip20231020_6.png" srcset="/img/loading.gif" lazyload><br><img src="/2023/10/20/html-css-03/Snip20231020_7.png" srcset="/img/loading.gif" lazyload></p>
-<h3 id="2-3-三种编写规则"><a href="#2-3-三种编写规则" class="headerlink" title="2.3. 三种编写规则"></a>2.3. 三种编写规则</h3><ul>
-<li>内联样式</li>
-<li>内部样式</li>
-<li>外部样式<ul>
+</li>
+</ul>
+<h3 id="2-2-CSS样式"><a href="#2-2-CSS样式" class="headerlink" title="2.2. CSS样式"></a>2.2. CSS样式</h3><h4 id="2-2-1-CSS样式规则顺序"><a href="#2-2-1-CSS样式规则顺序" class="headerlink" title="2.2.1 CSS样式规则顺序"></a>2.2.1 CSS样式规则顺序</h4><ul>
+<li><img src="/2023/10/20/html-css-03/Snip20231020_4.png"></li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_15.png"></li>
+<li>声明（Declaration）一个单独的CSS规则，如 color: red; 用来指定添加的CSS样式<ul>
+<li>属性名（Property name）：要添加的css规则的名称</li>
+<li>属性值（Property value）：要添加的css规则的值  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">属性名: 属性值</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="2-2-2-CSS常见属性分类"><a href="#2-2-2-CSS常见属性分类" class="headerlink" title="2.2.2 CSS常见属性分类"></a>2.2.2 CSS常见属性分类</h4><p><img src="/2023/10/20/html-css-03/Snip20231020_6.png"><br><img src="/2023/10/20/html-css-03/Snip20231020_7.png"></p>
+<h3 id="2-3-CSS提供了3种方法，可以将CSS样式应用到元素上"><a href="#2-3-CSS提供了3种方法，可以将CSS样式应用到元素上" class="headerlink" title="2.3. CSS提供了3种方法，可以将CSS样式应用到元素上"></a>2.3. CSS提供了3种方法，可以将CSS样式应用到元素上</h3><ul>
+<li>内联样式（inline style）<ul>
+<li>内联样式（inline style），也有人翻译成行内样式<ul>
+<li>内联样式表存在于HTML元素的style属性之中</li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_17.png"></li>
+<li>CSS样式之间用分号;隔开，建议每条CSS样式后面都加上分号;</li>
+</ul>
+</li>
+<li>很多资料不推荐这种写法<ul>
+<li>在原生的HTML编写过程中确实这种写法是不推荐的</li>
+<li>在Vue的template中某些动态的样式是会使用内联样式的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>内部样式表（internal style sheet）、文档样式表（document style sheet）、内嵌样式表（embed style sheet）<ul>
+<li><code>将CSS放在HTML文件&lt;head&gt;元素里的&lt;style&gt;元素之中</code></li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_18.png"></li>
+<li>在Vue的开发过程中，每个组件也会有一个style元素，和内部样式表非常的相似（原理并不相同）</li>
+</ul>
+</li>
+<li>外部样式表（external style sheet）<ul>
+<li>外部样式表（external style sheet） 是将css编写一个独立的文件中，并且通过<link>元素引入进来</li>
+<li>使用外部样式表主要分成两个步骤:<ul>
+<li>第一步：将css样式在一个独立的css文件中编写（后缀名为.css）</li>
+<li>第二步：通过<link>元素引入进来</li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_19.png"></li>
+</ul>
+</li>
 <li>link</li>
-<li>@import</li>
+<li>@import <ul>
+<li>可以在style元素或者CSS文件中使用@import导入其他的CSS文件</li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_20.png"></li>
 </ul>
 </li>
 </ul>
-<h3 id="2-4-CSS中的注释"><a href="#2-4-CSS中的注释" class="headerlink" title="2.4. CSS中的注释"></a>2.4. CSS中的注释</h3><div class="code-wrapper"><pre><code class="hljs css"><span class="hljs-comment">/* 注释 */</span></code></pre></div>
+</li>
+</ul>
+<h3 id="2-4-CSS中的注释"><a href="#2-4-CSS中的注释" class="headerlink" title="2.4. CSS中的注释"></a>2.4. CSS中的注释</h3><ul>
+<li>CSS代码也可以添加注释来方便阅读<ul>
+<li>CSS的注释和HTML的注释是不一样的</li>
+<li>&#x2F;* 注释内容 *&#x2F;  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 注释 */</span></span><br></pre></td></tr></table></figure></li>
+<li><img src="/2023/10/20/html-css-03/Snip20231025_21.png"></li>
+</ul>
+</li>
+</ul>
 <h3 id="2-5-常见的CSS"><a href="#2-5-常见的CSS" class="headerlink" title="2.5. 常见的CSS"></a>2.5. 常见的CSS</h3><ul>
 <li>Xmind</li>
 <li>最常见的CSS<ul>
-<li>font-size</li>
-<li>color</li>
-<li>background-color</li>
-<li>width</li>
-<li>height</li>
+<li>font-size：文字大小</li>
+<li>color：前景色（文字颜色）</li>
+<li>background-color：背景色</li>
+<li>width ：宽度</li>
+<li>height：高度</li>
+</ul>
+</li>
+<li>必须掌握的CSS属性<ul>
+<li>在开发中90+%的时间写的都是这些属性</li>
+<li>不要小看这几个CSS属性，里面涉及到的概念是非常多的</li>
+<li>你必须了解CSS的很多特性，才能真正理解里面的每个属性</li>
+<li>并且在遇到一些问题的时候知道如何去调试</li>
+</ul>
+</li>
+<li>CSS属性的官方文档<ul>
+<li>CSS官方文档地址<ul>
+<li><a target="_blank" rel="noopener" href="https://www.w3.org/TR/?tag=css">https://www.w3.org/TR/?tag=css</a></li>
+</ul>
+</li>
+<li>CSS推荐文档地址<ul>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh_CN/docs/Web/CSS/Reference#%E5%85%B3%E9%94%AE%E5%AD%97%E7%B4%A2%E5%BC%95">https://developer.mozilla.org/zh_CN/docs/Web/CSS/Reference#%E5%85%B3%E9%94%AE%E5%AD%97%E7%B4%A2%E5%BC%95</a></li>
 </ul>
 </li>
 </ul>
-<h3 id="2-6-案例练习"><a href="#2-6-案例练习" class="headerlink" title="2.6. 案例练习"></a>2.6. 案例练习</h3><p>星球介绍</p>
-<ul>
-<li>有水平排布(了解)</li>
+</li>
+<li>由于浏览器版本、CSS版本等问题，查询某些CSS是否可用<ul>
+<li>可以到<a target="_blank" rel="noopener" href="https://caniuse.com/">https://caniuse.com/</a> 查询CSS属性的可用性</li>
+<li>这个网站在后续的browserlist工具中我们再详细说明</li>
+</ul>
+</li>
 </ul>
 <h2 id="三-知识点补充"><a href="#三-知识点补充" class="headerlink" title="三. 知识点补充"></a>三. 知识点补充</h2><h3 id="3-1-link元素"><a href="#3-1-link元素" class="headerlink" title="3.1. link元素"></a>3.1. link元素</h3><ul>
+<li>link元素是外部资源链接元素，规范了文档与外部资源的关系<ul>
+<li>link元素通常是在head元素中</li>
+</ul>
+</li>
+<li>最常用的链接是样式表（CSS）<ul>
+<li>此外也可以被用来创建站点图标（比如 “favicon” 图标）</li>
+</ul>
+</li>
+<li>link元素常见的属性<ul>
+<li>href：此属性指定被链接资源的URL。 URL 可以是绝对的，也可以是相对的</li>
+<li>rel：指定链接类型，常见的链接类型：<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Link_types">https://developer.mozilla.org/zh-CN/docs/Web/HTML/Link_types</a><ul>
+<li>icon：站点图标</li>
+<li>stylesheet：CSS样式</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>link链接 站点图标</li>
 <li>dns-prefetch(了解)</li>
 </ul>
 <h3 id="3-2-进制"><a href="#3-2-进制" class="headerlink" title="3.2. 进制"></a>3.2. 进制</h3><ul>
-<li>人类 十进制</li>
-<li>计算机: 二进制&#x2F;八进制&#x2F;十六进制</li>
+<li>进制的概念<ul>
+<li>维基百科：进位制是一种记数方式，亦称进位计数法或位值计数法</li>
+<li>通俗理解：当数字达到某个值时，进一位(比如从1位变成2位)</li>
+</ul>
+</li>
+<li>按照进制的概念，来理解一下十进制<ul>
+<li>当数字到9的时候，用一位已经表示不了了，那么就进一位变成2位</li>
+<li>在东北没有什么是一顿烧烤不能解决的，如果有，那就两顿</li>
+</ul>
+</li>
+<li>按照上面的来理解，二进制、八进制、十六进制<ul>
+<li>二进制：当数字到1的时候，用一位已经表示不了了，那么就进一位</li>
+<li>八进制：当数字到7的时候，用一位已经表示不了了，那么就进一位</li>
+<li>十六进制：等等，用一位如何表示十六个数字呢？a(10)、b(11)、c(12) 、 d(13) 、 e(14) 、 f(15)</li>
+</ul>
+</li>
+<li>人类的十进制<ul>
+<li>学习编程语言，需要了解进制的概念</li>
+<li>我们平时使用的数字都是十进制的，当我写下一个数字的时候，你会默认当做十进制来使用</li>
+<li>从发明数字的开始，人类就使用十进制，原因可能是人类正好十根手指</li>
+<li>如果人类有八根手指，现在用的可能是八进制<ul>
+<li>所以说，十进制就是放之四海而皆准的常理吗？</li>
+<li>并不见得，计算机就认为二进制、八进制、十六进制更符合自己的思维</li>
+<li><code>常识就是人到十八岁为止所累积的各种偏见。Common sense is the collection of prejudices acquired by age eighteen -- 阿尔伯特·爱因斯坦（Albert Einstein)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>计算机中的进制<ul>
+<li>为什么计算机更喜欢二进制呢<ul>
+<li>前面我们已经介绍过了为什么计算机更喜欢二进制了</li>
+<li>和其底层的原理有关系</li>
+</ul>
+</li>
+<li>如何表示二进制、八进制、十六进制?<ul>
+<li>二进制（0b开头, binary）：其中的数字由0、1组成，可以回顾之前学习过的机器语言</li>
+<li>八进制（0o开头, Octonary）：其中的数字由0~7组成</li>
+<li>十六进制（0x开头, hexadecimal）：其中的数字由0~9和字母a-f组成（大小写都可以）</li>
+</ul>
+</li>
+<li>十进制 or 二进制<ul>
+<li>虽然计算机更喜欢二进制, 但是编程中我们还是以十进制为主.</li>
+<li>因为高级编程语言的目的就是更加接近自然语言, 让我们人类更容易理解</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>进制之间的转换<ul>
+<li>十进制转其他进制<ul>
+<li>整除, 取余数</li>
+</ul>
+</li>
+<li>其他进制转十进制<ul>
+<li>比如二进制的1001转成十进制: 1 * 2³ + 0 * 2² + 0 * 2 + 1 &#x3D; 9</li>
+<li>比如八进制的1234转成十进制: 1 * 8³ + 2 * 8² + 3 * 8 + 4 &#x3D; 668</li>
+<li>比如十六进制的522转成十进制: 5 * 16² + 2 * 16 + 2 &#x3D; 1314</li>
+</ul>
+</li>
+<li>二进制转八进制<ul>
+<li>三位转成一位八进制</li>
+</ul>
+</li>
+<li>二进制转十六进制<ul>
+<li>四位转成一位十六进制</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3 id="3-3-颜色表示方法"><a href="#3-3-颜色表示方法" class="headerlink" title="3.3. 颜色表示方法"></a>3.3. 颜色表示方法</h3><ul>
 <li>color keywords(颜色关键字)</li>
@@ -387,363 +459,4 @@
 </ul>
 </li>
 </ul>
-<h3 id="3-4-Chrome调试工具"><a href="#3-4-Chrome调试工具" class="headerlink" title="3.4. Chrome调试工具"></a>3.4. Chrome调试工具</h3><h3 id="3-5-浏览器的渲染流程"><a href="#3-5-浏览器的渲染流程" class="headerlink" title="3.5. 浏览器的渲染流程"></a>3.5. 浏览器的渲染流程</h3>
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/HTML/" class="print-no-link">#HTML</a>
-      
-    </div>
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>邂逅CSS样式</div>
-      <div>https://www.yzcblog.cn/2023/10/20/html-css-03/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>Yu Zhen Chang</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2023年10月20日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2023/10/20/html-css-04/" title="CSS文本属性,字体属性,常见选择器">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CSS文本属性,字体属性,常见选择器</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2023/10/20/html-css-02/" title="HTML常见元素">
-                        <span class="hidden-mobile">HTML常见元素</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-  
-  
-    <article id="comments" lazyload>
-      
-
-    </article>
-  
-
-
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
-</html>
+<h3 id="3-4-Chrome调试工具"><a href="#3-4-Chrome调试工具" class="headerlink" title="3.4. Chrome调试工具"></a>3.4. Chrome调试工具</h3><h3 id="3-5-浏览器的渲染流程"><a href="#3-5-浏览器的渲染流程" class="headerlink" title="3.5. 浏览器的渲染流程"></a>3.5. 浏览器的渲染流程</h3></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://www.yzcblog.cn">Yu Zhen Chang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://www.yzcblog.cn/2023/10/20/html-css-03/">https://www.yzcblog.cn/2023/10/20/html-css-03/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.yzcblog.cn" target="_blank">YZC's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTML/">HTML</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/10/20/html-css-04/" title="CSS文本属性,字体属性,常见选择器"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CSS文本属性,字体属性,常见选择器</div></div></a></div><div class="next-post pull-right"><a href="/2023/10/20/html-css-02/" title="HTML常见元素"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HTML常见元素</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/10/18/html-css-01/" title="邂逅Web开发"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-18</div><div class="title">邂逅Web开发</div></div></a></div><div><a href="/2023/10/20/html-css-02/" title="HTML常见元素"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-20</div><div class="title">HTML常见元素</div></div></a></div><div><a href="/2023/10/20/html-css-04/" title="CSS文本属性,字体属性,常见选择器"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-20</div><div class="title">CSS文本属性,字体属性,常见选择器</div></div></a></div><div><a href="/2023/10/20/html-css-05/" title="CSS属性特征和CSS的盒子模型"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-20</div><div class="title">CSS属性特征和CSS的盒子模型</div></div></a></div><div><a href="/2023/10/20/html-css-06/" title="CSS盒子模型和背景设置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-20</div><div class="title">CSS盒子模型和背景设置</div></div></a></div><div><a href="/2023/10/20/html-css-07/" title="高级元素的使用和常见Emmet语法"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-20</div><div class="title">高级元素的使用和常见Emmet语法</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yu Zhen Chang</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E7%9F%A5%E8%AF%86%E7%82%B9%E8%A1%A5%E5%85%85"><span class="toc-number">1.</span> <span class="toc-text">一. 知识点补充</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%AD%97%E7%AC%A6%E5%AE%9E%E4%BD%93"><span class="toc-number">1.1.</span> <span class="toc-text">1.1. 字符实体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-URL"><span class="toc-number">1.2.</span> <span class="toc-text">1.2. URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96"><span class="toc-number">1.3.</span> <span class="toc-text">1.3. 元素语义化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-SEO%E4%BC%98%E5%8C%96"><span class="toc-number">1.4.</span> <span class="toc-text">1.4. SEO优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%BC%96%E7%A0%81"><span class="toc-number">1.5.</span> <span class="toc-text">1.5. 字符串编码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E9%82%82%E9%80%85CSS"><span class="toc-number">2.</span> <span class="toc-text">二. 邂逅CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E8%AE%A4%E8%AF%86CSS"><span class="toc-number">2.1.</span> <span class="toc-text">2.1. 认识CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-CSS%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.2.</span> <span class="toc-text">2.2. CSS样式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-CSS%E6%A0%B7%E5%BC%8F%E8%A7%84%E5%88%99%E9%A1%BA%E5%BA%8F"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.2.1 CSS样式规则顺序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-CSS%E5%B8%B8%E8%A7%81%E5%B1%9E%E6%80%A7%E5%88%86%E7%B1%BB"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2.2 CSS常见属性分类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-CSS%E6%8F%90%E4%BE%9B%E4%BA%863%E7%A7%8D%E6%96%B9%E6%B3%95%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%B0%86CSS%E6%A0%B7%E5%BC%8F%E5%BA%94%E7%94%A8%E5%88%B0%E5%85%83%E7%B4%A0%E4%B8%8A"><span class="toc-number">2.3.</span> <span class="toc-text">2.3. CSS提供了3种方法，可以将CSS样式应用到元素上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-CSS%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A"><span class="toc-number">2.4.</span> <span class="toc-text">2.4. CSS中的注释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-%E5%B8%B8%E8%A7%81%E7%9A%84CSS"><span class="toc-number">2.5.</span> <span class="toc-text">2.5. 常见的CSS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E7%9F%A5%E8%AF%86%E7%82%B9%E8%A1%A5%E5%85%85"><span class="toc-number">3.</span> <span class="toc-text">三. 知识点补充</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-link%E5%85%83%E7%B4%A0"><span class="toc-number">3.1.</span> <span class="toc-text">3.1. link元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E8%BF%9B%E5%88%B6"><span class="toc-number">3.2.</span> <span class="toc-text">3.2. 进制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E9%A2%9C%E8%89%B2%E8%A1%A8%E7%A4%BA%E6%96%B9%E6%B3%95"><span class="toc-number">3.3.</span> <span class="toc-text">3.3. 颜色表示方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-Chrome%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7"><span class="toc-number">3.4.</span> <span class="toc-text">3.4. Chrome调试工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B"><span class="toc-number">3.5.</span> <span class="toc-text">3.5. 浏览器的渲染流程</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/23/html-css-12/" title="额外知识补充二">额外知识补充二</a><time datetime="2023-10-23T09:13:49.000Z" title="发表于 2023-10-23 17:13:49">2023-10-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-11/" title="额外知识补充">额外知识补充</a><time datetime="2023-10-20T11:20:49.000Z" title="发表于 2023-10-20 19:20:49">2023-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-10/" title="CSS Flex布局和额外知识补充">CSS Flex布局和额外知识补充</a><time datetime="2023-10-20T10:49:49.000Z" title="发表于 2023-10-20 18:49:49">2023-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-09/" title="绝对定位和CSS元素浮动">绝对定位和CSS元素浮动</a><time datetime="2023-10-20T10:20:19.000Z" title="发表于 2023-10-20 18:20:19">2023-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-08/" title="额外知识补充和CSS元素定位">额外知识补充和CSS元素定位</a><time datetime="2023-10-20T09:32:49.000Z" title="发表于 2023-10-20 17:32:49">2023-10-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Yu Zhen Chang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

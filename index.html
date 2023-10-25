@@ -1,765 +1,556 @@
-
-
-<!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/yzcBlog.jpeg">
-  <link rel="icon" href="/img/yzcBlog.jpeg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Yu Zhen Chang">
-  <meta name="keywords" content="">
-  
-    <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>YZC's Blog</title><meta name="author" content="Yu Zhen Chang"><meta name="copyright" content="Yu Zhen Chang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="YZC&#39;s Blog">
 <meta property="og:url" content="https://www.yzcblog.cn/index.html">
 <meta property="og:site_name" content="YZC&#39;s Blog">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="Yu Zhen Chang">
-<meta name="twitter:card" content="summary_large_image">
-  
-  
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
-  
-  <title>YZC&#39;s Blog</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"www.yzcblog.cn","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 100vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>余小鱼&#39;s Blog</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>友链</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.jpeg') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="欢迎来到余小鱼的博客空间,所观,所感,皆是沉淀!!!"></span>
-          
-        </div>
-
-        
-      </div>
-
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.yzcblog.cn/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'YZC\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-10-25 17:12:48'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
       
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
+        get: key => {
+          const itemStr = localStorage.getItem(key)
       
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/23/html-css-12/" target="_self">
-          额外知识补充二
-        </a>
-      </h2>
-
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/23/html-css-12/" target="_self">
-        <div>
-          内容回顾一. 单位相关1.1. CSS其他单位绝对单位  cm&#x2F;mm&#x2F;in px相对单位 em&#x2F;rem&#x2F;vw&#x2F;vh  1.2. pixel的深入理解 pixel代表的含义 当前像素的分类: 设备像素（物理像素） 设备独立像素（逻辑像素） CSS像素 -》 逻辑像素    1.3. DPR、PPIDPR：device pixel ratio  设备
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-23 17:13" pubdate>
-              2023-10-23
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-11/" target="_self">
-          额外知识补充
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-11/" target="_self">
-        <div>
-          一. HTML5新增的内容1.1. 语义化元素 header nav section article aside footerdisplay: block  1.2. video&#x2F;audio 基本使用 src 其他属性 controls width&#x2F;height autoplay muted preload   支持的格式 浏览器支持的视频格式   适配性写法&lt;vide
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 19:20" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-              <a href="/tags/CSS/">#CSS</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-10/" target="_self">
-          CSS Flex布局和额外知识补充
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-10/" target="_self">
-        <div>
-          **** 一. 浮动float1.1. 两个案例 自己做一下 第二个边框不要现在必须学会  1.2. 清除浮动伪元素:after 1.3. 多种布局对比 标准流 定位 浮动  二. flex布局2.1. 认识flex布局2.2. flex布局重要的概念 flex container flex item main axis&#x2F;cross axios main start&#x2F;main
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 18:49" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-09/" target="_self">
-          绝对定位和CSS元素浮动
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-09/" target="_self">
-        <div>
-          一. 绝对定位(absolute)1.1. 绝对定位1.会脱离标准流2.相对的参照对象  最近的祖先定位元素; 如果祖先元素都没有定位, 相对视口3.子绝父相 子元素绝对定位 父元素相对定位4.子绝父绝 子元素绝对定位 父元素绝对定位5.子绝父固 子元素绝对定位 父元素固定定位  1.2. position设置absolute&#x2F;fixed特性1.都是脱离标准流2.可以任何设置宽度和高度
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 18:20" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-              <a href="/tags/CSS/">#CSS</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-08/" target="_self">
-          额外知识补充和CSS元素定位
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-08/" target="_self">
-        <div>
-          一. 结构伪类1.1. nth-childnth-child(2)nth-child(2n+1)nth-child(-n+5) 1.2. nth-last-child&#x2F;nth-of-type&#x2F;nth-last-of-type1.3. 其他结构伪类first-child相对比较重要的两个伪类: :root =&gt; html :empty =&gt; 小程序 1.4. 否定伪
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 17:32" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-07/" target="_self">
-          高级元素的使用和常见Emmet语法
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-07/" target="_self">
-        <div>
-          一. 列表元素1.1. 三种列表 ol &gt; li ul &gt; li dl &gt; dt &gt; dd  1.2. 列表案例 总结思路  二. table元素2.1. table常见 table tr td  2.2. 案例练习股票表格 table &#123;     border-collapse: collapse; &#125; 2.3. table元素 thead tbod
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 17:11" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-06/" target="_self">
-          CSS盒子模型和背景设置
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-06/" target="_self">
-        <div>
-          一. 盒子模型1.1. margin margin的设置问题 top&#x2F;right&#x2F;bottom&#x2F;left   margin和padding的选择 margin的传递和折叠 父子的传递 兄弟的折叠   margin进行水平居中 0 auto;    1.2. outline 外轮廓  a, input &#123;   outline: none; &#125; 1.
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 16:43" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-05/" target="_self">
-          CSS属性特征和CSS的盒子模型
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-05/" target="_self">
-        <div>
-          一. 伪元素 1.1. first-line&#x2F;first-letter(了解)1.2. before&#x2F;after 插入内容 插入图片 方格 content不能省略 width&#x2F;height dib    二. 继承-层叠-元素类型2.1. CSS属性继承 继承: 如果我们给某一个元素设置了某个CSS属性, 而该属性具有继承性, 那么该元素的所有子元素会默认继承该属性.
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 15:58" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-04/" target="_self">
-          CSS文本属性,字体属性,常见选择器
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-04/" target="_self">
-        <div>
-          一. CSS属性 - 文本 1.1. text-decoration 装饰线  1.2. text-transform(了解) 形变 JS  1.3. text-indent 首行缩进 10px; 2em;  1.4. text-align(重要) 案例: 文字的居中(字面理解) 案例: 图片的居中(MDN) 案例: div元素的居中(W3C inline-level) 特性 或者其他方法
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 15:49" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2023/10/20/html-css-03/" target="_self">
-          邂逅CSS样式
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/20/html-css-03/" target="_self">
-        <div>
-          一. 知识点补充 1.1. 字符实体 为什么需要字符实体; 三个:&amp;nbsp; &amp;lt; &amp;gt;  1.2. URL URL的格式: 协议:&#x2F;&#x2F;主机:端口&#x2F;路径&#x2F;文件名?查询#片段id   和URI的区别: URI:标志符 URL: 定位符(网络地址)    1.3. 元素语义化 用正确的元素去做正确的事情  1.4. SEO优化
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-10-20 15:15" pubdate>
-              2023-10-20
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/HTML/">#HTML</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
       }
-      var text = subtitle.getAttribute('data-typed-text');
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
       
-        typing(text);
-      
-    })(window, document);
-  </script>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="YZC's Blog"><span class="site-name">YZC's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">YZC's Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/23/html-css-12/" title="额外知识补充二">额外知识补充二</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-23T09:13:49.000Z" title="发表于 2023-10-23 17:13:49">2023-10-23</time></span></div><div class="content">
+内容回顾一. 单位相关1.1. CSS其他单位绝对单位
+
+cm&#x2F;mm&#x2F;in
+px相对单位
+em&#x2F;rem&#x2F;vw&#x2F;vh
+
+1.2. pixel的深入理解
+pixel代表的含义
+当前像素的分类:
+设备像素（物理像素）
+设备独立像素（逻辑像素）
+CSS像素 -》 逻辑像素
+
+
+
+1.3. DPR、PPIDPR：device pixel ratio
+
+设备像素比PPI：pixel per in
+
+二. CSS预处理器2.1. CSS弊端以及常见的预处理器介绍2.2. Less的介绍
+介绍
+编写less
+问题:less如何转成CSS
+node -&gt; npm -&gt; lessc -&gt; webpack
+vscode插件和在线查看
+js文件
+cdn
+下载本地
 
 
 
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+
+2.3. less语法
+兼容CSS
+定义变量
+嵌套
+&amp;掌握
+
+
+计算
+混入mixins
+基本使用
+传递参数
+结合Maps
+
+
+额外补充
+继承
+内置函数
+作用域
+注释
+导入
+
+
+
+2.4. 介绍Scss三. 移动端适配3.1. 移动端开发相关的概念理解3.2. vi ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-11/" title="额外知识补充">额外知识补充</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T11:20:49.000Z" title="发表于 2023-10-20 19:20:49">2023-10-20</time></span></div><div class="content">
+一. HTML5新增的内容1.1. 语义化元素
+header
+nav
+section
+article
+aside
+footer1display: block
+
+1.2. video&#x2F;audio
+基本使用 src
+其他属性
+controls
+width&#x2F;height
+autoplay
+muted
+preload
+
+
+支持的格式
+浏览器支持的视频格式
+
+
+适配性写法1234&lt;video&gt;	&lt;source src&gt;    &lt;p&gt;提示&lt;/p&gt;&lt;/video&gt;
+
+1.3. input新增特性
+新增的属性
+type新增的类型
+color
+date
+time
+…
+
+
+
+1.4. 全局属性 data-*1// js代码目前了解
+二. white-space&#x2F;text-overflow(了解)
+其他值
+
+三. 常见的CSS函数补充3.1. var
+自定义属性: –main-color
+var()
+
+3.2. calc
+计算
+
+3.3. blur
+filter:
+backdrop-filter:
+
+3.4. gra ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-10/" title="CSS Flex布局和额外知识补充">CSS Flex布局和额外知识补充</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T10:49:49.000Z" title="发表于 2023-10-20 18:49:49">2023-10-20</time></span></div><div class="content">****
+一. 浮动float1.1. 两个案例
+自己做一下
+第二个边框不要现在必须学会
+
+1.2. 清除浮动1伪元素:after
+1.3. 多种布局对比
+标准流
+定位
+浮动
+
+二. flex布局2.1. 认识flex布局2.2. flex布局重要的概念
+flex container
+flex item
+main axis&#x2F;cross axios
+main start&#x2F;main end&#x2F;cross start &#x2F; cross end
+
+2.3. flex container中的属性
+flex-direction:
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+2.4. flex item中的属性
+order
+align-self
+flex-grow
+flex-shrink
+flex-basis
+flex
+
+2.5. flex布局中justify-content最后一行布局问题三. transform3.1. transform作用以及语法3.2. translate( ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-09/" title="绝对定位和CSS元素浮动">绝对定位和CSS元素浮动</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T10:20:19.000Z" title="发表于 2023-10-20 18:20:19">2023-10-20</time></span></div><div class="content">
+一. 绝对定位(absolute)1.1. 绝对定位1.会脱离标准流2.相对的参照对象
+
+最近的祖先定位元素;
+如果祖先元素都没有定位, 相对视口3.子绝父相
+子元素绝对定位
+父元素相对定位4.子绝父绝
+子元素绝对定位
+父元素绝对定位5.子绝父固
+子元素绝对定位
+父元素固定定位
+
+1.2. position设置absolute&#x2F;fixed特性1.都是脱离标准流2.可以任何设置宽度和高度3.默认宽度高度是包裹内容4.不再给父级元素汇报宽度和高度5.自己内部依然按照标准流布局6.公式
+
+包含块的width &#x3D; left + right + margin-left + margin-right + width
+left0 right0 margin 0 auto width: 200px -&gt; 水平居中
+left 0 right 0 margin 0 -&gt; 宽度沾满包含块的宽度
+
+
+垂直方向也是一样
+俺也一样
+
+
+
+1.3. 绝对定位案例网易云item的练习
+
+基本布局
+背景
+绝对定位
+
+1.4. 粘性定位 sticky
+基本演练
+默认相对定位
+top: 0 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-08/" title="额外知识补充和CSS元素定位">额外知识补充和CSS元素定位</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T09:32:49.000Z" title="发表于 2023-10-20 17:32:49">2023-10-20</time></span></div><div class="content">
+一. 结构伪类1.1. nth-childnth-child(2)nth-child(2n+1)nth-child(-n+5)
+1.2. nth-last-child&#x2F;nth-of-type&#x2F;nth-last-of-type1.3. 其他结构伪类first-child相对比较重要的两个伪类:
+12:root =&gt; html:empty =&gt; 小程序
+1.4. 否定伪类1:not(简单选择器)
+二. 额外知识补充2.1. border的图形三角形旋转(后续)
+2.2. 网络字体
+拿到字体
+@font-face
+使用它
+兼容性
+
+2.3. 字体图标
+选择图标
+下载代码
+在项目中使用12&lt;i&gt;字符实体&lt;/i&gt;&lt;i class=&quot;iconfont icon-video&quot;&gt;&lt;/i&gt;
+补充: 如果有新的图标
+使用最新下载的字体
+
+2.4. CSS Sprite将多个图标放到一张图片使用图片
+
+width&#x2F;height
+background-position
+
+2.5. cursor1cu ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-07/" title="高级元素的使用和常见Emmet语法">高级元素的使用和常见Emmet语法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T09:11:32.000Z" title="发表于 2023-10-20 17:11:32">2023-10-20</time></span></div><div class="content">
+一. 列表元素1.1. 三种列表
+ol &gt; li
+ul &gt; li
+dl &gt; dt &gt; dd
+
+1.2. 列表案例
+总结思路
+
+二. table元素2.1. table常见
+table
+tr
+td
+
+2.2. 案例练习股票表格
+123table &#123;    border-collapse: collapse;&#125;
+2.3. table元素
+thead
+tbody
+tfoot
+caption
+th
+
+2.4. 单元格合并
+colspan
+rowspan
+练习: 课程表
+
+2.5. 作业三. 表单元素3.1. 常见表单
+input
+form
+label
+select&#x2F;option
+textarea
+
+3.2. input元素
+type
+text
+password
+time
+date
+
+
+disabled&#x2F;autofoucs&#x2F;readonly
+MDN文档
+boolean属性写法
+
+3.3. input模拟按钮
+三种按钮
+普通
+重置
+提交
+
+
+button
+
+3.4. input和label结合3.5. radio&#x2F ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-06/" title="CSS盒子模型和背景设置">CSS盒子模型和背景设置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T08:43:23.000Z" title="发表于 2023-10-20 16:43:23">2023-10-20</time></span></div><div class="content">
+一. 盒子模型1.1. margin
+margin的设置问题
+top&#x2F;right&#x2F;bottom&#x2F;left
+
+
+margin和padding的选择
+margin的传递和折叠
+父子的传递
+兄弟的折叠
+
+
+margin进行水平居中
+0 auto;
+
+
+
+1.2. outline
+外轮廓
+
+123a, input &#123;  outline: none;&#125;
+1.3. box-shadow
+box-shadow: offset-x offset-y blur-radius spread-radius color
+
+1.4. text-shadow
+text-shadow: offset offset-y blur color;
+
+1.5. box-sizing
+content-box
+border-box(常用)
+
+1.6. 注意事项
+width&#x2F;height&#x2F;margin-top&#x2F;margin-bottom 对于行内非替换元素是无效的
+padding-top&#x2F;bottom, border-top&#x2F;b ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-05/" title="CSS属性特征和CSS的盒子模型">CSS属性特征和CSS的盒子模型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T07:58:49.000Z" title="发表于 2023-10-20 15:58:49">2023-10-20</time></span></div><div class="content">一. 伪元素
+1.1. first-line&#x2F;first-letter(了解)1.2. before&#x2F;after
+插入内容
+插入图片
+方格
+content不能省略
+width&#x2F;height
+dib
+
+
+
+二. 继承-层叠-元素类型2.1. CSS属性继承
+继承: 如果我们给某一个元素设置了某个CSS属性, 而该属性具有继承性, 那么该元素的所有子元素会默认继承该属性.
+有哪些继承属性? 不需要记
+一般和文本&#x2F;字体相关的很多属性都具备继承;
+xmind
+多查文档
+
+
+
+2.2. CSS属性层叠
+一个CSS属性可以多次设置:
+判断一: 权重, 优先级;
+判断二: 先后顺序;
+
+
+常见的选择器:
+!important -&gt; 10000
+内联 -&gt; 1000
+id -&gt; 100
+类&#x2F;伪类&#x2F;属性 -&gt; 10
+元素 -&gt; 1
+统配 -&gt; 0
+
+
+
+2.3. 元素的类型
+div -&gt; 块级元素
+span -&gt; 行内级
+有本质的区别 -&gt; display: block
+span -&gt; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-04/" title="CSS文本属性,字体属性,常见选择器">CSS文本属性,字体属性,常见选择器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T07:49:49.000Z" title="发表于 2023-10-20 15:49:49">2023-10-20</time></span></div><div class="content">一. CSS属性 - 文本
+1.1. text-decoration
+装饰线
+
+1.2. text-transform(了解)
+形变
+JS
+
+1.3. text-indent
+首行缩进
+10px;
+2em;
+
+1.4. text-align(重要)
+案例: 文字的居中(字面理解)
+案例: 图片的居中(MDN)
+案例: div元素的居中(W3C inline-level)
+特性
+或者其他方法
+
+
+
+1.5. letter-word-spacing二. CSS属性 - 字体2.1. font-size
+20px;
+2em;
+200%
+
+2.2. font-family
+原理: 读取操作系统
+网络字体;
+
+
+1个或者多个值
+
+2.3. font-style2.4. font-varient
+小写字母以大写显示, 但是高度保持小写的高度
+
+2.5. line-height
+两个基线(baseline)距离
+一行文本 -&gt; line-height
+行高 - 文本高度  &#x3D; 行距
+
+2.6. font缩写属性
+font-size&#x2F;line-height font-fami ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/20/html-css-03/" title="邂逅CSS样式">邂逅CSS样式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-20T07:15:11.000Z" title="发表于 2023-10-20 15:15:11">2023-10-20</time></span></div><div class="content">一. 知识点补充
+1.1. 字符实体
+思考：我们编写的HTML代码会被浏览器解析
+如下代码是如何被解析的呢？
+如果你使用小于号（&lt;），浏览器会将其后的文本解析为一个tag。
+但是某些情况下，我们确实需要编写一个小于号（&lt;）
+这个时候我们就可以使用字符实体
+
+
+
+HTML 实体是一段以连字号（&amp;）开头、以分号（;）结尾的文本(字符串);
+实体常常用于显示保留字符（这些字符会被解析为 HTML 代码）和不可见的字符（如“不换行空格”）
+你也可以用实体来代替其他难以用标准键盘键入的字符
+
+
+
+常见的字符实体:
 
 
 
 
-  <script  src="/js/local-search.js" ></script>
+1.2. URL
+URL 代表着是统一资源定位符（Uniform Resource Locator）
+通俗点说：URL 无非就是一个给定的独特资源在 Web 上的地址
+理论上说，每个有效的 URL 都指向一个唯一的资源
+这个资源可以是一个 HTML 页面，一个 CSS 文档，一幅图像，等等
 
 
 
 
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+URL的格式:
 
 
-  
 
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
-</html>
+
+和URI的区别:
+URI &#x3D; Uniform Resource Identifier 统一资源标志符，用于标识 Web 技术使用 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Yu Zhen Chang</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/23/html-css-12/" title="额外知识补充二">额外知识补充二</a><time datetime="2023-10-23T09:13:49.000Z" title="发表于 2023-10-23 17:13:49">2023-10-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-11/" title="额外知识补充">额外知识补充</a><time datetime="2023-10-20T11:20:49.000Z" title="发表于 2023-10-20 19:20:49">2023-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-10/" title="CSS Flex布局和额外知识补充">CSS Flex布局和额外知识补充</a><time datetime="2023-10-20T10:49:49.000Z" title="发表于 2023-10-20 18:49:49">2023-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-09/" title="绝对定位和CSS元素浮动">绝对定位和CSS元素浮动</a><time datetime="2023-10-20T10:20:19.000Z" title="发表于 2023-10-20 18:20:19">2023-10-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/20/html-css-08/" title="额外知识补充和CSS元素定位">额外知识补充和CSS元素定位</a><time datetime="2023-10-20T09:32:49.000Z" title="发表于 2023-10-20 17:32:49">2023-10-20</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/HTML/" style="font-size: 1.5em; color: #99a9bf">HTML</a> <a href="/tags/Java/" style="font-size: 1.1em; color: #999">Java</a> <a href="/tags/CSS/" style="font-size: 1.3em; color: #99a1ac">CSS</a> <a href="/tags/iOS/" style="font-size: 1.1em; color: #999">iOS</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">14</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-10-25T09:12:48.476Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Yu Zhen Chang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
