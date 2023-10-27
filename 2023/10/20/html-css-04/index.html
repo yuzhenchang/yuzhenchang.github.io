@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:published_time" content="2023-10-20T07:49:49.000Z">
-<meta property="article:modified_time" content="2023-10-27T01:46:18.168Z">
+<meta property="article:modified_time" content="2023-10-27T02:05:46.392Z">
 <meta property="article:author" content="Yu Zhen Chang">
 <meta property="article:tag" content="HTML">
 <meta name="twitter:card" content="summary">
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-10-27 09:46:18'
+  postUpdate: '2023-10-27 10:05:46'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -153,7 +153,7 @@
         }
       }
       detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="YZC's Blog"><span class="site-name">YZC's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CSS文本属性,字体属性,常见选择器</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-20T07:49:49.000Z" title="发表于 2023-10-20 15:49:49">2023-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-27T01:46:18.168Z" title="更新于 2023-10-27 09:46:18">2023-10-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="CSS文本属性,字体属性,常见选择器"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><img src="/2023/10/20/html-css-04/Snip20231020_8.png"></p>
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="YZC's Blog"><span class="site-name">YZC's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CSS文本属性,字体属性,常见选择器</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-20T07:49:49.000Z" title="发表于 2023-10-20 15:49:49">2023-10-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-27T02:05:46.392Z" title="更新于 2023-10-27 10:05:46">2023-10-27</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="CSS文本属性,字体属性,常见选择器"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><img src="/2023/10/20/html-css-04/Snip20231020_8.png"></p>
 <h2 id="一-CSS属性-文本"><a href="#一-CSS属性-文本" class="headerlink" title="一. CSS属性 - 文本"></a>一. CSS属性 - 文本</h2><h3 id="text-decoration用于设置文字的装饰线"><a href="#text-decoration用于设置文字的装饰线" class="headerlink" title="text-decoration用于设置文字的装饰线"></a>text-decoration用于设置文字的装饰线</h3><ul>
 <li>decoration是装饰&#x2F;装饰品的意思</li>
 <li>text-decoration有如下常见取值<ul>
@@ -363,11 +363,11 @@
 </ul>
 </li>
 <li>其他了解的(不用记)<ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li>[attr~&#x3D;val]: 属性值包含val, 如果有其他值必须以空格和val分割</li>
+<li><code>[attr*=val]: 属性值包含某一个值val</code></li>
+<li><code>[attr^=val]: 属性值以val开头</code></li>
+<li><code>[attr$=val]: 属性值以val结尾</code></li>
+<li><code>[attr|=val]: 属性值等于val或者以val开头后面紧跟连接符-</code></li>
+<li><code>[attr~=val]: 属性值包含val, 如果有其他值必须以空格和val分割</code></li>
 </ul>
 </li>
 </ul>
@@ -445,14 +445,13 @@
 </ul>
 </li>
 <li>结构伪类（structural pseudo-classes）(后续学习)<ul>
-<li>:nth-child()、:nth-last-child()、:nth-of-type()、:nth-lastof-type()</li>
-<li>:first-child、:last-child、:first-of-type、:last-of-type</li>
-<li>:root、:only-child、:only-of-type、:empty</li>
-<li></li>
+<li><code>:nth-child()、:nth-last-child()、:nth-of-type()、:nth-lastof-type()</code></li>
+<li><code>:first-child、:last-child、:first-of-type、:last-of-type</code></li>
+<li><code>:root、:only-child、:only-of-type、:empty</code></li>
 </ul>
 </li>
 <li>否定伪类（negation pseudo-classes）(后续学习)<ul>
-<li>:not()</li>
+<li><code>:not()</code></li>
 </ul>
 </li>
 <li>所有的伪类<ul>
